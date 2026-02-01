@@ -31,9 +31,16 @@
       h2 {
         color: #34495e;
         margin-top: 30px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 5px;
       }
-      p {
-        margin-bottom: 15px;
+      h3 {
+        color: #444;
+        margin-top: 20px;
+      }
+      p,
+      li {
+        margin-bottom: 10px;
       }
       ul {
         margin-bottom: 15px;
@@ -46,100 +53,126 @@
         border-top: 1px solid #eaeaea;
         padding-top: 20px;
       }
+      .email-list {
+        background: #f0f7ff;
+        padding: 15px;
+        border-radius: 5px;
+        border-left: 4px solid #007bff;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <h1>Privacy Policy for Primerior</h1>
-      <p><strong>Effective Date:</strong> <span id="date"></span></p>
+      <p><strong>Last updated:</strong> <span id="date"></span></p>
 
       <script>
-        document.getElementById("date").textContent =
-          new Date().toLocaleDateString();
+        const today = new Date();
+        const options = { year: "numeric", month: "long", day: "numeric" };
+        document.getElementById("date").textContent = today.toLocaleDateString(
+          "en-US",
+          options,
+        );
       </script>
 
       <p>
-        Primerior ("we", "us", or "our") operates the Primerior Chrome Extension
-        (the "Extension"). This page informs you of our policies regarding the
-        collection, use, and disclosure of personal data when you use our
-        Extension.
+        Primerior is a Chrome Extension designed to help users collect,
+        organize, and manage personal knowledge directly from the browser. The
+        extension allows saving text, links, and images into structured "Books",
+        supports offline data access, and optimizes workflows for content
+        creators and developers.
       </p>
 
-      <h2>1. Information Collection and Use</h2>
+      <h2>1. Data Collection</h2>
       <p>
-        We respect your privacy and are committed to protecting it. The
-        Extension is designed to prioritize user privacy.
+        Primerior does <strong>NOT</strong> collect, store, or transmit any
+        personally identifiable information (PII) to our own servers for
+        commercial purposes.
       </p>
-
-      <h3>Personal Data (Google Account)</h3>
       <p>
-        Our Extension uses the "identity" permission to allow you to sign in
-        with your Google Account. This is used solely for the purpose of:
+        All data is processed locally within your browser. If you choose to use
+        the synchronization feature, your data is securely stored in your own
+        Google Drive/Account infrastructure via Google Sign-In.
       </p>
-      <ul>
-        <li>Authenticating you as a user.</li>
-        <li>
-          Syncing your saved content (notes, collections, etc.) across your
-          devices.
-        </li>
-      </ul>
-      <p>
-        We do not sell, trade, or rent your personal identification information
-        to others.
-      </p>
-
-      <h3>Content Data</h3>
-      <p>
-        The core function of Primerior is to help you capture and organize text
-        and media. This data is:
-      </p>
-      <ul>
-        <li>Stored securely.</li>
-        <li>Accessible only by you.</li>
-        <li>
-          Used strictly to provide the features of the Extension (displaying
-          your collections, searching your notes).
-        </li>
-      </ul>
 
       <h2>2. Permissions</h2>
-      <p>To function, the Extension requires specific permissions:</p>
+      <p>
+        The extension requests only the permissions necessary to function
+        properly. These permissions are used solely to provide the advertised
+        features:
+      </p>
+
+      <h3>Storage</h3>
+      <p>
+        We use local storage to save your personal settings (theme, language),
+        application state, and cache data (books, notes). This ensures high
+        performance and allows the extension to function immediately, even when
+        offline.
+      </p>
+
+      <h3>Identity</h3>
+      <p>
+        We use the <code>identity</code> permission to facilitate authentication
+        via Google Sign-In (OAuth2). This allows you to securely log in and
+        synchronize your knowledge database across different devices without us
+        ever seeing your password.
+      </p>
+
+      <h3>ActiveTab</h3>
+      <p>
+        We use <code>activeTab</code> to automatically retrieve the Title and
+        URL of the web page you are currently viewing when you create a new
+        "Book" or "Note". This saves you from having to copy and paste source
+        information manually.
+      </p>
+
+      <h3>ContextMenus</h3>
+      <p>
+        We use <code>contextMenus</code> to add a "Add to Primerior" option to
+        your right-click menu. This allows you to highlight text on a webpage
+        and quickly save it to your library without opening the extension popup.
+      </p>
+
+      <h2>3. Data Usage</h2>
+      <p>Your data belongs to you.</p>
       <ul>
         <li>
-          <strong>Storage:</strong> To save your preferences and cached data
-          locally.
+          No user data is sold, shared, or transferred to third parties by us.
         </li>
         <li>
-          <strong>Identity:</strong> To authenticate with Google services.
-        </li>
-        <li>
-          <strong>ActiveTab/ContextMenus:</strong> To allow you to clip content
-          from the current page you are viewing.
+          Your synced data is handled directly between your browser and Google's
+          secure servers.
         </li>
       </ul>
 
-      <h2>3. Third-Party Services</h2>
+      <h2>4. Third-party Services</h2>
       <p>
-        We use Google OAuth 2.0 for authentication. Please refer to
-        <a href="https://policies.google.com/privacy" target="_blank"
-          >Google's Privacy Policy</a
-        >
-        for more information on how they handle your data.
+        Primerior does not use third-party analytics, advertising, or tracking
+        services. We rely on Google OAuth 2.0 strictly for authentication and
+        data synchronization purposes.
       </p>
 
-      <h2>4. Changes to This Privacy Policy</h2>
+      <h2>5. User Control</h2>
       <p>
-        We may update our Privacy Policy from time to time. We will notify you
-        of any changes by posting the new Privacy Policy on this page.
+        You grant permissions explicitly when installing the extension. You can
+        remove the extension at any time to stop all local data processing. You
+        can also revoke the extension's access to your Google Account via your
+        <a href="https://myaccount.google.com/permissions" target="_blank"
+          >Google Account Permissions page</a
+        >.
       </p>
 
-      <h2>5. Contact Us</h2>
+      <h2>6. Contact</h2>
       <p>
-        If you have any questions about this Privacy Policy, please contact us
-        at:
+        If you have any questions regarding this privacy policy, please contact
+        us at:
       </p>
-      <p>Email: <em>minhthiennguyen1509@gmail.com</em></p>
-      <!-- PLEASE UPDATE THIS -->
+
+      <div class="email-list">
+        <p><strong>Email 1:</strong> minhthiennguyen1509@gmail.com</p>
+        <p><strong>Email 2:</strong> laughingthi010@gmail.com</p>
+        <!-- Added per request -->
+      </div>
 
       <div class="footer">
         <p>
