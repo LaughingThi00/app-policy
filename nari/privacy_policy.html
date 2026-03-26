@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy for Nari</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 24px;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            border-bottom: 3px solid #6b4c9a;
+            /* Nari Purple */
+            padding-bottom: 12px;
+            margin-top: 0;
+        }
+
+        h2 {
+            margin-top: 36px;
+            border-bottom: 1px solid #ecf0f1;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            margin-top: 24px;
+            color: #34495e;
+        }
+
+        .date {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 24px;
+        }
+
+        strong {
+            color: #2980b9;
+        }
+
+        ul {
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        code {
+            background-color: #f1f2f6;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #e74c3c;
+        }
+
+        .footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #ecf0f1;
+            font-size: 0.9em;
+            color: #95a5a6;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Privacy Policy for Nari</h1>
+        <p class="date"><strong>Effective Date:</strong> March 26, 2026</p>
+
+        <p>Thank you for choosing to use Nari. We understand that your privacy is important. This Privacy Policy
+            outlines our practices regarding the collection, use, and disclosure of your information when you use our
+            mobile application ("App").</p>
+
+        <h2>1. Data Collection and Usage</h2>
+        <p><strong>We do not collect, transmit, store, or share any of your Personal or Sensitive User Data.</strong>
+        </p>
+        <p>Nari operates <strong>100% offline and locally</strong> on your device. All calculations, tracking metrics,
+            and application states are processed within the isolated environment of your smartphone. We do not use any
+            remote servers, cloud databases, or third-party analytics trackers to monitor your activity.</p>
+
+        <h2>2. Required Permissions and Clear Justification</h2>
+        <p>To provide its core functionality (preventing "dumbscrolling" and limiting excessive screen time), Nari
+            requires specific Android system permissions. Below is a detailed explanation of why each permission is
+            absolutely necessary and how it is used strictly within the boundaries of the law and Google Play Developer
+            Policies:</p>
+
+        <h3>a) Usage Access (<code>PACKAGE_USAGE_STATS</code>)</h3>
+        <ul>
+            <li><strong>Why we need it:</strong> To determine which applications are currently active on your screen and
+                calculate the duration of your usage.</li>
+            <li><strong>How it is used:</strong> Nari checks the foreground application name against your personal
+                "monitored apps" list. If a match is found, a local timer starts.</li>
+            <li><strong>Privacy Guarantee:</strong> We solely use this permission for local time-tracking. We do not
+                record your interaction history, keystrokes, content viewed inside those apps, or transmit this usage
+                data to any external server.</li>
+        </ul>
+
+        <h3>b) Display Over Other Apps (<code>SYSTEM_ALERT_WINDOW</code>)</h3>
+        <ul>
+            <li><strong>Why we need it:</strong> To instantly display a warning overlay popup (Nari's intervention
+                screen) when your usage limit is exceeded.</li>
+            <li><strong>How it is used:</strong> When the local timer hits the configured limit (e.g., 5 minutes), Nari
+                draws a full-screen block over the monitored app to interrupt your scrolling habit.</li>
+            <li><strong>Privacy Guarantee:</strong> This permission is strictly utilized to render our UI components
+                over the active screen. It is not used for clickjacking, ad-injection, or any malicious UI interference.
+            </li>
+        </ul>
+
+        <h3>c) Foreground Service & Notifications (<code>FOREGROUND_SERVICE</code> & <code>POST_NOTIFICATIONS</code>)
+        </h3>
+        <ul>
+            <li><strong>Why we need it:</strong> Android OS requires background tracking applications to declare a
+                visible Foreground Service to ensure transparency to the user.</li>
+            <li><strong>How it is used:</strong> Nari runs a continuous local service to keep the timer accurate even
+                when the app is closed. This service displays a persistent, low-priority notification in your status bar
+                so you are always aware that Nari is active.</li>
+        </ul>
+
+        <h3>d) Run at Startup (<code>RECEIVE_BOOT_COMPLETED</code>)</h3>
+        <ul>
+            <li><strong>Why we need it:</strong> To ensure your Nari protections automatically resume after you restart
+                your phone, without requiring you to manually open the app again.</li>
+        </ul>
+
+        <h2>3. Data Storage and Security</h2>
+        <p>All of your preferences (such as the list of monitored apps, time limits, and Action History) are saved
+            securely in your device's local storage (SQLite/Room Database and SharedPreferences) and are exclusively
+            accessible by Nari. If you uninstall the App, all associated tracking data is permanently deleted from your
+            device.</p>
+
+        <h2>4. Children's Privacy</h2>
+        <p>Our App does not address anyone under the age of 13. We do not knowingly collect personally identifiable
+            information from children under 13. Given our strict "Zero Data Collection" architecture, no child's data
+            can ever be transmitted or compromised.</p>
+
+        <h2>5. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new
+            Privacy Policy on this page and updating the "Effective Date" at the top. You are advised to review this
+            Privacy Policy periodically for any changes.</p>
+
+        <h2>6. Contact Us</h2>
+        <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:</p>
+        <ul>
+            <li><strong>Email:</strong> minhthiennguyen1509@gmail.com</li>
+            <li><strong>Developer:</strong> Minh Thien Nguyen (Laughing Thi)</li>
+        </ul>
+
+        <div class="footer">
+            <p><em>(Note: Please replace the placeholder Email/Name above before publishing this page).</em></p>
+            <p>&copy; 2026 Nari App. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>
