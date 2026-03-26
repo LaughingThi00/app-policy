@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#F9FAFB"/>
+  <rect x="220" y="70" width="360" height="360" rx="16" fill="#E5E7EB"/>
+  <text x="400" y="470" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="24">Bank QR Placeholder</text>
+</svg>

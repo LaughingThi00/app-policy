@@ -1,0 +1,78 @@
+{
+  "seo": {
+    "title": "Ủng hộ Nguyễn Minh Thiện | Lập trình viên indie",
+    "description": "Ủng hộ Nguyễn Minh Thiện, lập trình viên indie xây dựng các công cụ gọn nhẹ và ứng dụng hữu ích. Đóng góp là tùy chọn và giúp duy trì, cải tiến dự án."
+  },
+  "nav": {
+    "brand": "Nguyễn Minh Thiện",
+    "languageLabel": "Ngôn ngữ"
+  },
+  "hero": {
+    "badge": "Lập trình viên indie",
+    "titlePrefix": "Xin chào, mình là",
+    "tagline": "Mình xây dựng những công cụ nhỏ để cuộc sống đơn giản hơn.",
+    "ctaDonate": "Ủng hộ dự án",
+    "ctaContact": "Gửi phản hồi",
+    "avatarAlt": "Ảnh chân dung Nguyễn Minh Thiện"
+  },
+  "about": {
+    "title": "Giới thiệu",
+    "body": "Mình là lập trình viên indie, tạo ra các ứng dụng thiết thực và công cụ gọn nhẹ. Mình tập trung giải quyết những vấn đề hằng ngày và cải thiện quy trình làm việc theo cách đơn giản, đáng tin cậy. Mỗi dự án đều được xây dựng cẩn thận để dễ dùng và thực sự hữu ích."
+  },
+  "value": {
+    "title": "Giá trị bạn nhận được",
+    "item1": {
+      "title": "Công cụ năng suất",
+      "desc": "Những tiện ích nhỏ giúp giảm thao tác thừa và tiết kiệm thời gian."
+    },
+    "item2": {
+      "title": "Hệ thống quy trình",
+      "desc": "Cấu trúc đơn giản giúp cá nhân và nhóm làm việc gọn gàng hơn."
+    },
+    "item3": {
+      "title": "Ứng dụng gọn nhẹ",
+      "desc": "Ứng dụng nhanh, rõ ràng, dễ dùng và đáng tin cậy."
+    }
+  },
+  "donation": {
+    "title": "Ủng hộ công việc của mình",
+    "subtitle": "Nếu các dự án của mình giúp ích cho bạn, bạn có thể ủng hộ qua bất kỳ hình thức nào bên dưới. Sự ủng hộ của bạn là tùy chọn và luôn được trân trọng.",
+    "bmac": {
+      "title": "Buy Me a Coffee",
+      "desc": "Cách nhanh gọn để gửi sự ủng hộ.",
+      "cta": "Ủng hộ qua Buy Me a Coffee"
+    },
+    "paypal": {
+      "title": "PayPal",
+      "desc": "Lựa chọn an toàn, hỗ trợ quốc tế.",
+      "cta": "Ủng hộ qua PayPal"
+    },
+    "bank": {
+      "title": "Chuyển khoản ngân hàng",
+      "bankName": "Ngân hàng",
+      "accountNumber": "Số tài khoản",
+      "accountHolder": "Chủ tài khoản",
+      "qrAlt": "Mã QR chuyển khoản Agribank – Nguyễn Minh Thiện"
+    },
+    "momo": {
+      "title": "MoMo",
+      "phoneLabel": "Số điện thoại",
+      "qrAlt": "Mã QR MoMo – Nguyễn Minh Thiện"
+    }
+  },
+  "trust": {
+    "title": "Cảm ơn bạn",
+    "body": "Sự ủng hộ của bạn giúp mình duy trì các dự án hiện có và tiếp tục cải tiến theo thời gian. Đóng góp luôn là tùy chọn, và mình trân trọng mọi sự hỗ trợ, phản hồi hoặc lời động viên."
+  },
+  "contact": {
+    "title": "Liên hệ & phản hồi",
+    "subtitle": "Bạn có thể báo lỗi, gửi góp ý hoặc đề xuất ý tưởng cho các công cụ tiếp theo.",
+    "emailCta": "Gửi email",
+    "bugCta": "Báo lỗi",
+    "feedbackCta": "Gửi phản hồi",
+    "githubCta": "GitHub"
+  },
+  "footer": {
+    "line": "Xây dựng bằng sự tận tâm. Cảm ơn bạn đã ghé thăm."
+  }
+}
