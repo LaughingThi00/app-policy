@@ -145,7 +145,29 @@
             <li><strong>Why we need it:</strong> To ensure your Nari protections automatically resume after you restart
                 your phone, without requiring you to manually open the app again.</li>
         </ul>
-
+        <h3>e) Background Activity / Battery Optimization Exemption (<code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code>)
+        </h3>
+        <ul>
+            <li><strong>Why we need it:</strong> On certain Android manufacturers (notably Samsung One UI and Xiaomi
+                MIUI/HyperOS),
+                the operating system aggressively kills background processes — including Foreground Services — when the
+                user
+                swipes an app from the Recent Apps screen, overriding Android's standard
+                <code>stopWithTask="false"</code>
+                declaration. Requesting a battery optimization exemption instructs the OS to treat Nari as a
+                high-priority process and allow it to self-restart without user intervention.</li>
+            <li><strong>How it is used:</strong> If granted, this permission solely prevents Nari's monitoring service
+                from being terminated by manufacturer-specific battery management systems. It does not grant Nari access
+                to any personal data, network resources, or device sensors beyond what is already declared above.</li>
+            <li><strong>This permission is optional.</strong> Nari's core functionality remains fully operational
+                without
+                it. Users on stock Android (Pixel and other AOSP-based devices) are unaffected. However, on Samsung and
+                Xiaomi devices, denying this permission may cause the monitoring service to stop temporarily after the
+                app is removed from Recent Apps, until the periodic AlarmManager keepalive restarts it (typically
+                within 5 seconds).</li>
+            <li><strong>Privacy Guarantee:</strong> This exemption does not allow Nari to collect additional data, run
+                network requests, or perform any action outside of its stated screen-time monitoring purpose.</li>
+        </ul>
         <h2>3. Data Storage and Security</h2>
         <p>All of your preferences (such as the list of monitored apps, time limits, and Action History) are saved
             securely in your device's local storage (SQLite/Room Database and SharedPreferences) and are exclusively
