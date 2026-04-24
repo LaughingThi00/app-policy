@@ -1,0 +1,78 @@
+{
+  "seo": {
+    "title": "Support Nguyen Minh Thien | Indie Developer",
+    "description": "Support Nguyen Minh Thien, an indie developer building lightweight tools and useful apps. Donations are optional and help maintain and improve projects."
+  },
+  "nav": {
+    "brand": "Nguyen Minh Thien",
+    "languageLabel": "Language"
+  },
+  "hero": {
+    "badge": "Indie Developer",
+    "titlePrefix": "Hi, I am",
+    "tagline": "I build small tools to make life simpler.",
+    "ctaDonate": "Support My Work",
+    "ctaContact": "Send Feedback",
+    "avatarAlt": "Portrait of Nguyen Minh Thien"
+  },
+  "about": {
+    "title": "About",
+    "body": "I am an indie developer creating practical apps and lightweight tools. I focus on solving everyday problems and improving workflows in simple, reliable ways. I build with care so each project stays useful and easy to use."
+  },
+  "value": {
+    "title": "What You Get",
+    "item1": {
+      "title": "Productivity Tools",
+      "desc": "Small utilities that remove friction and save time in daily work."
+    },
+    "item2": {
+      "title": "Workflow Systems",
+      "desc": "Simple structures that help individuals and teams stay organized."
+    },
+    "item3": {
+      "title": "Lightweight Apps",
+      "desc": "Fast, focused apps designed for clarity, reliability, and ease of use."
+    }
+  },
+  "donation": {
+    "title": "Support My Work",
+    "subtitle": "If my projects help you, you can support me through any method below. Your support is optional and always appreciated.",
+    "bmac": {
+      "title": "Buy Me a Coffee",
+      "desc": "A quick way to send support.",
+      "cta": "Donate via Buy Me a Coffee"
+    },
+    "paypal": {
+      "title": "PayPal",
+      "desc": "International and secure option.",
+      "cta": "Donate via PayPal"
+    },
+    "bank": {
+      "title": "Bank Transfer",
+      "bankName": "Bank",
+      "accountNumber": "Account Number",
+      "accountHolder": "Account Holder",
+      "qrAlt": "Agribank transfer QR code — Nguyen Minh Thien"
+    },
+    "momo": {
+      "title": "MoMo",
+      "phoneLabel": "Phone Number",
+      "qrAlt": "MoMo QR code — Nguyen Minh Thien"
+    }
+  },
+  "trust": {
+    "title": "Thank You",
+    "body": "Your support helps me maintain existing projects and build better updates over time. Donations are always optional, and I am grateful for any support, feedback, or encouragement."
+  },
+  "contact": {
+    "title": "Contact & Feedback",
+    "subtitle": "Feel free to report bugs, send feedback, or share ideas for future tools.",
+    "emailCta": "Email Me",
+    "bugCta": "Report Bug",
+    "feedbackCta": "Send Feedback",
+    "githubCta": "GitHub"
+  },
+  "footer": {
+    "line": "Built with care. Thanks for visiting."
+  }
+}
