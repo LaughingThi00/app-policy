@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primerior - Your Smart Web Knowledge Assistant</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --bg: #f8fafc;
+            --text: #1e293b;
+            --text-light: #64748b;
+            --white: #ffffff;
+            --border: #e2e8f0;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', -apple-system, system-ui, sans-serif; line-height: 1.6; color: var(--text); background-color: var(--bg); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+        
+        header { background: var(--white); border-bottom: 1px solid var(--border); padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+        .nav-links { display: flex; gap: 2rem; align-items: center; }
+        .nav-links a { text-decoration: none; color: var(--text-light); font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--primary); }
+        
+        .lang-toggle { background: #f1f5f9; color: var(--text); border: 1px solid var(--border); padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 0.875rem; transition: all 0.2s; }
+        .lang-toggle:hover { background: #e2e8f0; }
+
+        .hero { padding: 5rem 0; text-align: center; }
+        .hero h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 1.5rem; color: var(--text); font-weight: 900; }
+        .hero p { font-size: 1.25rem; color: var(--text-light); max-width: 800px; margin: 0 auto 2.5rem; }
+        .cta-button { background: var(--primary); color: white; padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 1.125rem; box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3); transition: transform 0.2s; display: inline-block; }
+        .cta-button:hover { transform: translateY(-2px); background: var(--primary-dark); }
+
+        .section { padding: 5rem 0; border-top: 1px solid var(--border); }
+        .section-title { font-size: 2.25rem; margin-bottom: 3rem; text-align: center; font-weight: 800; }
+        
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; }
+        .feature-card { background: var(--white); padding: 2.5rem; border-radius: 16px; box-shadow: var(--shadow); border: 1px solid var(--border); }
+        .feature-card h3 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--text); display: flex; align-items: center; gap: 12px; }
+        .feature-card p { color: var(--text-light); font-size: 1.05rem; }
+
+        .workflow { background: #eff6ff; border-radius: 24px; padding: 4rem; margin: 2rem 0; }
+        .workflow-step { display: flex; gap: 2rem; margin-bottom: 2.5rem; align-items: flex-start; }
+        .step-icon { background: var(--primary); color: white; width: 40px; height: 40px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: 800; font-size: 1.25rem; }
+        .step-content h4 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+
+        .limitations { background: #fff7ed; border: 1px solid #fed7aa; padding: 2rem; border-radius: 12px; margin-top: 3rem; }
+        .limitations h3 { color: #9a3412; margin-bottom: 1rem; font-size: 1.25rem; }
+
+        footer { background: var(--white); border-top: 1px solid var(--border); padding: 4rem 0 2rem; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-bottom: 3rem; }
+        .footer-col h4 { margin-bottom: 1.5rem; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text); }
+        .footer-col a { display: block; margin-bottom: 0.75rem; color: var(--text-light); text-decoration: none; transition: color 0.2s; }
+        .footer-col a:hover { color: var(--primary); }
+        .footer-bottom { text-align: center; color: var(--text-light); font-size: 0.875rem; border-top: 1px solid var(--border); padding-top: 2rem; }
+
+        .lang-vi { display: none; }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .workflow { padding: 2rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Primerior</a>
+                <div class="nav-links">
+                    <a href="index.html" class="lang-en">Home</a><a href="index.html" class="lang-vi">Trang chủ</a>
+                    <a href="privacy.html" class="lang-en">Privacy</a><a href="privacy.html" class="lang-vi">Bảo mật</a>
+                    <a href="terms.html" class="lang-en">Terms</a><a href="terms.html" class="lang-vi">Điều khoản</a>
+                </div>
+                <button class="lang-toggle" onclick="toggleLanguage()">VI / EN</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="lang-en">
+                <h1>Stop Losing Great Ideas While Browsing</h1>
+                <p>Primerior is a one-click browser extension that captures web content instantly and organizes it into your personal structured library. No more messy bookmarks or lost tabs.</p>
+                <a href="#" class="cta-button">Add to Chrome — It's Free</a>
+            </div>
+            <div class="lang-vi">
+                <h1>Ngừng Đánh Rơi Những Ý Tưởng Tuyệt Vời Khi Lướt Web</h1>
+                <p>Primerior là tiện ích trình duyệt giúp thu thập nội dung web ngay lập tức và sắp xếp chúng vào thư viện cá nhân có cấu trúc. Không còn những dấu trang lộn xộn hay những tab bị bỏ quên.</p>
+                <a href="#" class="cta-button">Thêm vào Chrome — Hoàn toàn miễn phí</a>
+            </div>
+        </section>
+
+        <!-- PROBLEM & SOLUTION -->
+        <section class="section">
+            <div class="lang-en">
+                <h2 class="section-title">Why Primerior?</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>🧠 Built for Memory</h3>
+                        <p>Our brains find thousands of useful things online but forget 90% of them. Primerior acts as your second brain, storing exactly what matters without breaking your flow.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>📁 Clean Organization</h3>
+                        <p>Instead of a long list of titles, Primerior lets you build "Books" and "Collections". It's like having a digital bookshelf that organizes itself.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lang-vi">
+                <h2 class="section-title">Tại sao chọn Primerior?</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>🧠 Dành cho Trí nhớ</h3>
+                        <p>Bộ não chúng ta tìm thấy hàng ngàn thứ hữu ích trên mạng nhưng quên mất 90%. Primerior đóng vai trò là bộ não thứ hai, lưu trữ chính xác những gì quan trọng mà không làm gián đoạn luồng làm việc của bạn.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>📁 Sắp xếp Gọn gàng</h3>
+                        <p>Thay vì một danh sách dài các tiêu đề, Primerior cho phép bạn xây dựng các "Cuốn sách" và "Bộ sưu tập". Giống như việc có một giá sách kỹ thuật số tự sắp xếp vậy.</p>
+                    </div>
+                </div>
+            </section>
+
+        <!-- FEATURES -->
+        <section class="section">
+            <div class="lang-en">
+                <h2 class="section-title">What You Can Do</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>⚡ Alt + A Capture</h3>
+                        <p>The fastest way to save. Highlight text or right-click an image and use our shortcut to save it instantly to your chosen book.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>✍️ Edit & Annotate</h3>
+                        <p>Don't just save—improve. Add descriptions, notes, or use Markdown to format your captured content exactly how you want.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🔄 Real-time Sync</h3>
+                        <p>Sign in with Google and your data stays in sync across all your computers. Start researching at work, finish at home.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🖱️ Drag & Drop</h3>
+                        <p>Easily reorder your items, move them between collections, or resize columns to fit your visual style.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lang-vi">
+                <h2 class="section-title">Bạn có thể làm gì?</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>⚡ Lưu nhanh với Alt + A</h3>
+                        <p>Cách lưu nhanh nhất. Chỉ cần bôi đen văn bản hoặc chuột phải vào ảnh và dùng phím tắt để lưu ngay vào cuốn sách bạn chọn.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>✍️ Chỉnh sửa & Chú thích</h3>
+                        <p>Không chỉ lưu—hãy cải thiện. Thêm mô tả, ghi chú hoặc dùng Markdown để định dạng nội dung đã thu thập theo ý bạn.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🔄 Đồng bộ Thời gian thực</h3>
+                        <p>Đăng nhập bằng Google và dữ liệu của bạn sẽ luôn đồng bộ trên mọi máy tính. Bắt đầu nghiên cứu ở công ty, hoàn thiện tại nhà.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🖱️ Kéo & Thả</h3>
+                        <p>Dễ dàng sắp xếp lại các mục, di chuyển giữa các bộ sưu tập hoặc đổi kích thước các cột để phù hợp với phong cách của bạn.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section class="section">
+            <h2 class="section-title lang-en">How It Works</h2>
+            <h2 class="section-title lang-vi">Cách thức hoạt động</h2>
+            <div class="workflow">
+                <div class="workflow-step">
+                    <div class="step-icon">1</div>
+                    <div class="step-content">
+                        <h4 class="lang-en">Install the Extension</h4>
+                        <h4 class="lang-vi">Cài đặt Tiện ích</h4>
+                        <p class="lang-en">Add Primerior to your Chrome or Brave browser in seconds.</p>
+                        <p class="lang-vi">Thêm Primerior vào trình duyệt Chrome hoặc Brave của bạn chỉ trong vài giây.</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-icon">2</div>
+                    <div class="step-content">
+                        <h4 class="lang-en">Capture on the Fly</h4>
+                        <h4 class="lang-vi">Thu thập ngay lập tức</h4>
+                        <p class="lang-en">Whenever you see something useful, hit Alt+A or right-click to save.</p>
+                        <p class="lang-vi">Bất cứ khi nào bạn thấy thứ gì đó hữu ích, hãy nhấn Alt+A hoặc chuột phải để lưu.</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-icon">3</div>
+                    <div class="step-content">
+                        <h4 class="lang-en">Organize & Search</h4>
+                        <h4 class="lang-vi">Sắp xếp & Tìm kiếm</h4>
+                        <p class="lang-en">Access your dashboard to reorder your library or find items using the powerful search bar.</p>
+                        <p class="lang-vi">Truy cập bảng điều khiển để sắp xếp lại thư viện hoặc tìm các mục bằng thanh tìm kiếm mạnh mẽ.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LIMITATIONS -->
+        <section class="section">
+            <div class="lang-en">
+                <h2 class="section-title">Honest Limitations</h2>
+                <div class="limitations">
+                    <h3>What Primerior is not:</h3>
+                    <ul>
+                        <li>It's not a full document editor like Google Docs. It's for structured capture.</li>
+                        <li>Syncing requires a Google account. Offline mode stores data locally only.</li>
+                        <li>Currently available for Chromium-based browsers only (Chrome, Edge, Brave, etc.).</li>
+                        <li>There is a storage limit for high-resolution media to keep the service fast for everyone.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lang-vi">
+                <h2 class="section-title">Những hạn chế trung thực</h2>
+                <div class="limitations">
+                    <h3>Những gì Primerior không phải:</h3>
+                    <ul>
+                        <li>Nó không phải là trình chỉnh sửa văn bản đầy đủ như Google Docs. Nó dùng để thu thập có cấu trúc.</li>
+                        <li>Đồng bộ hóa yêu cầu tài khoản Google. Chế độ ngoại tuyến chỉ lưu dữ liệu cục bộ.</li>
+                        <li>Hiện tại chỉ hỗ trợ các trình duyệt dựa trên Chromium (Chrome, Edge, Brave, v.v.).</li>
+                        <li>Có giới hạn lưu trữ cho các phương tiện độ phân giải cao để giữ cho dịch vụ luôn nhanh cho mọi người.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Primerior</h4>
+                    <p class="lang-en">Your web companion for better knowledge management.</p>
+                    <p class="lang-vi">Người bạn đồng hành trên web giúp quản lý kiến thức tốt hơn.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="lang-en">Legal</h4><h4 class="lang-vi">Pháp lý</h4>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+                <div class="footer-col">
+                    <h4 class="lang-en">Contact</h4><h4 class="lang-vi">Liên hệ</h4>
+                    <a href="https://laughingthi00.github.io/app-policy/contact/">Development Team</a>
+                    <a href="https://nature-flow.cloud/product">More Products</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Primerior. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleLanguage() {
+            const enBlocks = document.querySelectorAll('.lang-en');
+            const viBlocks = document.querySelectorAll('.lang-vi');
+            const currentLang = document.documentElement.lang || 'en';
+
+            if (currentLang === 'en') {
+                enBlocks.forEach(b => b.style.display = 'none');
+                viBlocks.forEach(b => b.style.display = 'block');
+                document.documentElement.lang = 'vi';
+            } else {
+                enBlocks.forEach(b => b.style.display = 'block');
+                viBlocks.forEach(b => b.style.display = 'none');
+                document.documentElement.lang = 'en';
+            }
+        }
+
+        // Initialize state
+        document.addEventListener('DOMContentLoaded', () => {
+            document.documentElement.lang = 'en';
+            const viBlocks = document.querySelectorAll('.lang-vi');
+            viBlocks.forEach(b => b.style.display = 'none');
+        });
+    </script>
+</body>
+</html>

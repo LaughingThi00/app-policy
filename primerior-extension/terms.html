@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Primerior</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f8fafc;
+            --text: #1e293b;
+            --text-light: #64748b;
+            --white: #ffffff;
+            --border: #e2e8f0;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.7; color: var(--text); background-color: var(--bg); padding-bottom: 2rem; }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+        
+        header { background: var(--white); border-bottom: 1px solid var(--border); padding: 1rem 0; margin-bottom: 3rem; position: sticky; top: 0; z-index: 100; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.25rem; font-weight: 700; color: var(--primary); text-decoration: none; }
+        .lang-toggle { background: #f1f5f9; color: var(--text); border: 1px solid var(--border); padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-size: 0.875rem; }
+
+        .content { background: var(--white); padding: 3rem; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        h1 { font-size: 2.5rem; margin-bottom: 1.5rem; color: var(--text); }
+        h2 { font-size: 1.5rem; margin-top: 2.5rem; margin-bottom: 1rem; color: var(--text); border-bottom: 2px solid var(--bg); padding-bottom: 0.5rem; }
+        p { margin-bottom: 1rem; color: var(--text-light); }
+        ul { margin-bottom: 1.5rem; padding-left: 1.5rem; color: var(--text-light); }
+        li { margin-bottom: 0.5rem; }
+
+        footer { margin-top: 5rem; padding: 4rem 0 2rem; border-top: 1px solid var(--border); background: var(--white); }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; }
+        .footer-col h4 { margin-bottom: 1rem; font-size: 0.875rem; text-transform: uppercase; color: var(--text); }
+        .footer-col a { display: block; margin-bottom: 0.5rem; color: var(--text-light); text-decoration: none; font-size: 0.9375rem; }
+        .footer-col a:hover { color: var(--primary); }
+
+        .lang-vi { display: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Primerior</a>
+                <button class="lang-toggle" onclick="toggleLanguage()">VI / EN</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="content">
+            <div class="lang-en">
+                <h1>Terms of Service</h1>
+                <p>Last Updated: April 25, 2024</p>
+                <p>Please read these Terms of Service ("Terms") carefully before using the Primerior browser extension and associated services.</p>
+
+                <h2>1. Acceptance of Terms</h2>
+                <p>By installing the Primerior extension or creating an account, you agree to be bound by these Terms. If you do not agree, please do not use the service.</p>
+
+                <h2>2. Description of Service</h2>
+                <p>Primerior is a productivity service that allows users to capture web content (text, images, links) and organize them into structured "Books" and "Collections". Features include cloud synchronization, Markdown support, and content search.</p>
+
+                <h2>3. User Accounts</h2>
+                <p>We use Google OAuth for account management. You are responsible for maintaining the security of your Google account. You agree to provide accurate information when signing in.</p>
+
+                <h2>4. Acceptable Use</h2>
+                <p>You agree not to use Primerior for any illegal or unauthorized purposes. Specifically, you agree not to:</p>
+                <ul>
+                    <li>Capture content that violates intellectual property or copyright laws.</li>
+                    <li>Attempt to hack, disrupt, or overload our servers.</li>
+                    <li>Store or share harmful, illegal, or malicious material.</li>
+                </ul>
+
+                <h2>5. Content Ownership</h2>
+                <p><strong>Your Content:</strong> You retain full ownership of all content you capture using Primerior. We do not claim any rights to your data.</p>
+                <p><strong>Our Service:</strong> The Primerior software, design, and logos are the intellectual property of the development team.</p>
+
+                <h2>6. Google Integration Rules</h2>
+                <p>Our service integrates with Google APIs to provide synchronization. Your use of these features must also comply with Google's own terms of service.</p>
+
+                <h2>7. Service Availability</h2>
+                <p>We strive to keep Primerior available at all times, but we do not guarantee 100% uptime. Maintenance or technical issues may occasionally result in temporary service interruptions.</p>
+
+                <h2>8. Limitation of Liability</h2>
+                <p>Primerior is provided "as is". We are not liable for any indirect, incidental, or consequential damages (including data loss) arising from your use or inability to use the service.</p>
+
+                <h2>9. Termination</h2>
+                <p>We reserve the right to suspend or terminate your account if you violate these terms. You may delete your account and data at any time via the settings menu.</p>
+
+                <h2>10. Changes to Terms</h2>
+                <p>We may update these terms from time to time. We will notify you of any major changes by updating the date at the top of this page.</p>
+
+                <h2>11. Governing Law</h2>
+                <p>These terms are governed by the laws of the jurisdiction in which the development team operates, without regard to conflict of law principles.</p>
+            </div>
+
+            <div class="lang-vi">
+                <h1>Điều khoản dịch vụ</h1>
+                <p>Cập nhật lần cuối: 25 tháng 4, 2024</p>
+                <p>Vui lòng đọc kỹ các Điều khoản dịch vụ này trước khi sử dụng tiện ích Primerior.</p>
+
+                <h2>1. Chấp nhận Điều khoản</h2>
+                <p>Bằng việc cài đặt Primerior hoặc tạo tài khoản, bạn đồng ý bị ràng buộc bởi các Điều khoản này.</p>
+
+                <h2>2. Mô tả Dịch vụ</h2>
+                <p>Primerior là dịch vụ năng suất cho phép người dùng thu thập nội dung web (văn bản, ảnh, liên kết) và sắp xếp chúng vào các "Cuốn sách" và "Bộ sưu tập".</p>
+
+                <h2>3. Tài khoản Người dùng</h2>
+                <p>Chúng tôi sử dụng Google OAuth để quản lý tài khoản. Bạn chịu trách nhiệm bảo mật tài khoản Google của mình.</p>
+
+                <h2>4. Quy định sử dụng</h2>
+                <p>Bạn đồng ý không sử dụng Primerior cho bất kỳ mục đích bất hợp pháp nào. Bạn không được:</p>
+                <ul>
+                    <li>Lưu nội dung vi phạm bản quyền hoặc quyền sở hữu trí tuệ.</li>
+                    <li>Cố gắng tấn công hoặc làm gián đoạn máy chủ của chúng tôi.</li>
+                    <li>Lưu trữ các tài liệu độc hại hoặc bất hợp pháp.</li>
+                </ul>
+
+                <h2>5. Quyền sở hữu nội dung</h2>
+                <p><strong>Nội dung của bạn:</strong> Bạn giữ toàn bộ quyền sở hữu nội dung bạn thu thập. Chúng tôi không yêu cầu bất kỳ quyền nào đối với dữ liệu của bạn.</p>
+                <p><strong>Dịch vụ của chúng tôi:</strong> Phần mềm, thiết kế và logo Primerior là tài sản trí tuệ của đội ngũ phát triển.</p>
+
+                <h2>6. Giới hạn Trách nhiệm</h2>
+                <p>Dịch vụ được cung cấp "như hiện có". Chúng tôi không chịu trách nhiệm cho bất kỳ thiệt hại gián tiếp nào (bao gồm mất dữ liệu) phát sinh từ việc sử dụng dịch vụ.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Primerior</h4>
+                    <p class="lang-en">Your structured knowledge assistant.</p>
+                    <p class="lang-vi">Trợ lý kiến thức có cấu trúc của bạn.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="lang-en">Legal</h4><h4 class="lang-vi">Pháp lý</h4>
+                    <a href="index.html">Home</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+                <div class="footer-col">
+                    <h4 class="lang-en">Contact</h4><h4 class="lang-vi">Liên hệ</h4>
+                    <a href="https://laughingthi00.github.io/app-policy/contact/">Development Team</a>
+                    <a href="https://nature-flow.cloud/product">More Products</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Primerior. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleLanguage() {
+            const enBlocks = document.querySelectorAll('.lang-en');
+            const viBlocks = document.querySelectorAll('.lang-vi');
+            const currentLang = document.documentElement.lang || 'en';
+
+            if (currentLang === 'en') {
+                enBlocks.forEach(b => b.style.display = 'none');
+                viBlocks.forEach(b => b.style.display = 'block');
+                document.documentElement.lang = 'vi';
+            } else {
+                enBlocks.forEach(b => b.style.display = 'block');
+                viBlocks.forEach(b => b.style.display = 'none');
+                document.documentElement.lang = 'en';
+            }
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            document.documentElement.lang = 'en';
+            const viBlocks = document.querySelectorAll('.lang-vi');
+            viBlocks.forEach(b => b.style.display = 'none');
+        });
+    </script>
+</body>
+</html>

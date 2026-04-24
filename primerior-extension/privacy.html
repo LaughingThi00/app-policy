@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Primerior</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f8fafc;
+            --text: #1e293b;
+            --text-light: #64748b;
+            --white: #ffffff;
+            --border: #e2e8f0;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.7; color: var(--text); background-color: var(--bg); padding-bottom: 2rem; }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+        
+        header { background: var(--white); border-bottom: 1px solid var(--border); padding: 1rem 0; margin-bottom: 3rem; position: sticky; top: 0; z-index: 100; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.25rem; font-weight: 700; color: var(--primary); text-decoration: none; }
+        .lang-toggle { background: #f1f5f9; color: var(--text); border: 1px solid var(--border); padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-size: 0.875rem; }
+
+        .content { background: var(--white); padding: 3rem; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        h1 { font-size: 2.5rem; margin-bottom: 1.5rem; color: var(--text); }
+        h2 { font-size: 1.5rem; margin-top: 2.5rem; margin-bottom: 1rem; color: var(--text); border-bottom: 2px solid var(--bg); padding-bottom: 0.5rem; }
+        p { margin-bottom: 1rem; color: var(--text-light); }
+        ul { margin-bottom: 1.5rem; padding-left: 1.5rem; color: var(--text-light); }
+        li { margin-bottom: 0.5rem; }
+
+        .google-section { background: #eff6ff; border: 1px solid #bfdbfe; padding: 2rem; border-radius: 12px; margin: 2rem 0; }
+        .google-section h3 { color: #1e40af; margin-bottom: 1rem; }
+        
+        footer { margin-top: 5rem; padding: 4rem 0 2rem; border-top: 1px solid var(--border); background: var(--white); }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; }
+        .footer-col h4 { margin-bottom: 1rem; font-size: 0.875rem; text-transform: uppercase; color: var(--text); }
+        .footer-col a { display: block; margin-bottom: 0.5rem; color: var(--text-light); text-decoration: none; font-size: 0.9375rem; }
+        .footer-col a:hover { color: var(--primary); }
+
+        .lang-vi { display: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Primerior</a>
+                <button class="lang-toggle" onclick="toggleLanguage()">VI / EN</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="content">
+            <div class="lang-en">
+                <h1>Privacy Policy</h1>
+                <p>Last Updated: April 25, 2024</p>
+                <p>Primerior ("we", "us", or "our") values your privacy. This policy details how we collect, use, and protect your data when you use the Primerior browser extension and our associated cloud services.</p>
+
+                <h2>1. Information We Collect</h2>
+                <p>We collect only the minimum data necessary to provide a seamless knowledge-capturing experience:</p>
+                <ul>
+                    <li><strong>Account Information:</strong> When you sign in with Google, we receive your email address, name, and profile picture.</li>
+                    <li><strong>Captured Content:</strong> Text snippets, images, and links that you explicitly save.</li>
+                    <li><strong>Metadata:</strong> Timestamps, page titles, and source URLs of the items you save.</li>
+                    <li><strong>Organizational Data:</strong> Names of your Books, Collections, and the order of your items.</li>
+                </ul>
+
+                <h2>2. Data Collection Methods</h2>
+                <ul>
+                    <li><strong>Google OAuth 2.0:</strong> We use Google's secure login to identify you and sync your data.</li>
+                    <li><strong>Browser Storage:</strong> We use Chrome's local storage for offline access and caching.</li>
+                    <li><strong>Cloud API:</strong> Data is sent to our secure servers when you perform a sync or save action while logged in.</li>
+                </ul>
+
+                <div class="google-section">
+                    <h3>Google User Data Disclosure</h3>
+                    <p>Primerior's use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Google API Service User Data Policy</a>, including the Limited Use requirements.</p>
+                    <ul>
+                        <li><strong>What we use:</strong> We only access your basic profile (Email, Name, Avatar).</li>
+                        <li><strong>Why we need it:</strong> To identify your account across different devices and sync your captured content.</li>
+                        <li><strong>No Selling:</strong> We do not sell, trade, or rent your Google user data to third parties.</li>
+                        <li><strong>Revoking Access:</strong> You can revoke Primerior's access to your Google account at any time via <a href="https://myaccount.google.com/permissions" target="_blank">Google Account Permissions</a>.</li>
+                    </ul>
+                </div>
+
+                <h2>3. Data Usage</h2>
+                <p>Your data is used solely to power the features you see in the app:</p>
+                <ul>
+                    <li>Synchronizing your knowledge library across multiple devices.</li>
+                    <li>Allowing you to search and organize your saved content.</li>
+                    <li>Providing cloud storage for your images and files.</li>
+                </ul>
+
+                <h2>4. Storage & Retention</h2>
+                <p>Data is stored in secured MongoDB databases and Google Cloud Storage. We retain your information for as long as your account exists. When you delete a Book or your entire account, we remove that data from our production servers.</p>
+
+                <h2>5. Security Measures</h2>
+                <p>We implement industry-standard protections, including HTTPS for all data in transit, JSON Web Tokens (JWT) for authentication, and secure server-side encryption for stored data.</p>
+
+                <h2>6. User Rights</h2>
+                <p>You have the right to access, export, or delete your data at any time. You can use the "Export" feature in settings to download all your data in JSON format.</p>
+
+                <h2>7. Children's Privacy</h2>
+                <p>Our services are not intended for children under 13. We do not knowingly collect information from children.</p>
+
+                <h2>8. Contact Info</h2>
+                <p>For any privacy-related concerns, please reach out to our development team via the link in the footer.</p>
+            </div>
+
+            <div class="lang-vi">
+                <h1>Chính sách bảo mật</h1>
+                <p>Cập nhật lần cuối: 25 tháng 4, 2024</p>
+                <p>Primerior ("chúng tôi") tôn trọng quyền riêng tư của bạn. Chính sách này chi tiết cách chúng tôi thu thập, sử dụng và bảo vệ dữ liệu của bạn khi bạn sử dụng tiện ích Primerior và dịch vụ đám mây liên quan.</p>
+
+                <h2>1. Thông tin chúng tôi thu thập</h2>
+                <p>Chúng tôi chỉ thu thập dữ liệu tối thiểu cần thiết:</p>
+                <ul>
+                    <li><strong>Thông tin tài khoản:</strong> Email, tên và ảnh đại diện khi bạn đăng nhập bằng Google.</li>
+                    <li><strong>Nội dung đã thu thập:</strong> Văn bản, hình ảnh và liên kết mà bạn chủ động lưu.</li>
+                    <li><strong>Siêu dữ liệu:</strong> Dấu thời gian, tiêu đề trang và URL nguồn của các mục bạn đã lưu.</li>
+                    <li><strong>Dữ liệu tổ chức:</strong> Tên các Cuốn sách, Bộ sưu tập và thứ tự các mục của bạn.</li>
+                </ul>
+
+                <h2>2. Phương thức thu thập</h2>
+                <ul>
+                    <li><strong>Google OAuth 2.0:</strong> Chúng tôi sử dụng đăng nhập an toàn của Google để nhận diện bạn.</li>
+                    <li><strong>Bộ nhớ trình duyệt:</strong> Chúng tôi sử dụng bộ nhớ cục bộ của Chrome để truy cập ngoại tuyến.</li>
+                    <li><strong>Cloud API:</strong> Dữ liệu được gửi đến máy chủ khi bạn thực hiện đồng bộ hoặc lưu khi đang đăng nhập.</li>
+                </ul>
+
+                <div class="google-section">
+                    <h3>Công bố về Dữ liệu Người dùng Google</h3>
+                    <p>Việc Primerior sử dụng và chuyển giao thông tin nhận được từ Google API sẽ tuân thủ <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Chính sách dữ liệu người dùng Google API</a>.</p>
+                    <ul>
+                        <li><strong>Dữ liệu truy cập:</strong> Chúng tôi chỉ truy cập hồ sơ cơ bản (Email, Tên, Ảnh đại diện).</li>
+                        <li><strong>Mục đích:</strong> Để nhận diện tài khoản trên các thiết bị khác nhau và đồng bộ nội dung.</li>
+                        <li><strong>Không bán dữ liệu:</strong> Chúng tôi không bán, trao đổi hoặc cho thuê dữ liệu người dùng Google cho bên thứ ba.</li>
+                        <li><strong>Hủy quyền truy cập:</strong> Bạn có thể hủy quyền truy cập của Primerior bất cứ lúc nào tại <a href="https://myaccount.google.com/permissions" target="_blank">Quyền của Tài khoản Google</a>.</li>
+                    </ul>
+                </div>
+
+                <h2>3. Sử dụng dữ liệu</h2>
+                <p>Dữ liệu của bạn chỉ được dùng cho các tính năng trong ứng dụng:</p>
+                <ul>
+                    <li>Đồng bộ thư viện kiến thức trên nhiều thiết bị.</li>
+                    <li>Cho phép tìm kiếm và sắp xếp nội dung đã lưu.</li>
+                    <li>Cung cấp lưu trữ đám mây cho hình ảnh và tệp tin của bạn.</li>
+                </ul>
+
+                <h2>4. Bảo mật & Lưu trữ</h2>
+                <p>Dữ liệu được lưu trữ trong cơ sở dữ liệu MongoDB bảo mật và Google Cloud Storage. Chúng tôi giữ thông tin của bạn chừng nào tài khoản còn tồn tại.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Primerior</h4>
+                    <p class="lang-en">Securing your knowledge in the cloud.</p>
+                    <p class="lang-vi">Bảo mật kiến thức của bạn trên đám mây.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="lang-en">Legal</h4><h4 class="lang-vi">Pháp lý</h4>
+                    <a href="index.html">Home</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+                <div class="footer-col">
+                    <h4 class="lang-en">Contact</h4><h4 class="lang-vi">Liên hệ</h4>
+                    <a href="https://laughingthi00.github.io/app-policy/contact/">Development Team</a>
+                    <a href="https://nature-flow.cloud/product">More Products</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Primerior. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleLanguage() {
+            const enBlocks = document.querySelectorAll('.lang-en');
+            const viBlocks = document.querySelectorAll('.lang-vi');
+            const currentLang = document.documentElement.lang || 'en';
+
+            if (currentLang === 'en') {
+                enBlocks.forEach(b => b.style.display = 'none');
+                viBlocks.forEach(b => b.style.display = 'block');
+                document.documentElement.lang = 'vi';
+            } else {
+                enBlocks.forEach(b => b.style.display = 'block');
+                viBlocks.forEach(b => b.style.display = 'none');
+                document.documentElement.lang = 'en';
+            }
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            document.documentElement.lang = 'en';
+            const viBlocks = document.querySelectorAll('.lang-vi');
+            viBlocks.forEach(b => b.style.display = 'none');
+        });
+    </script>
+</body>
+</html>
