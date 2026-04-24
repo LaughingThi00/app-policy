@@ -1,0 +1,80 @@
+{
+  "seo": {
+    "title": "Contact Nguyen Minh Thien | Software Engineer",
+    "description": "Get in touch with Nguyen Minh Thien, a Software Engineer at Nature Flow Co., Ltd. Find contact details, social media, and professional links."
+  },
+  "nav": {
+    "brand": "Nguyen Minh Thien",
+    "languageLabel": "Language"
+  },
+  "hero": {
+    "badge": "Software Engineer",
+    "titlePrefix": "Hi, I am",
+    "tagline": "Currently a Software Engineer at Nature Flow Co., Ltd.",
+    "ctaDonate": "Contact Me",
+    "ctaContact": "Send Feedback",
+    "avatarAlt": "Portrait of Nguyen Minh Thien"
+  },
+  "about": {
+    "title": "About",
+    "body": "I am a Software Engineer at Nature Flow Co., Ltd, specializing in software outsourcing services, digital solution services, e-commerce, and agriculture. I create practical apps and lightweight tools, focusing on solving everyday problems in simple, reliable ways."
+  },
+  "value": {
+    "title": "Professional Services",
+    "item1": {
+      "title": "Software Outsourcing",
+      "desc": "High-quality software development services tailored to business needs."
+    },
+    "item2": {
+      "title": "Digital Solutions",
+      "desc": "Transforming workflows with efficient digital systems and automation."
+    },
+    "item3": {
+      "title": "E-commerce & Tech",
+      "desc": "Building robust platforms for e-commerce and specialized industries like Agriculture."
+    }
+  },
+  "contact_info": {
+    "title": "Contact & Socials",
+    "subtitle": "Feel free to reach out through any of the channels below. I'm always open to new opportunities and collaborations.",
+    "phone": {
+      "title": "Phone / Zalo",
+      "value": "(+84) 389895377"
+    },
+    "email": {
+      "title": "Email",
+      "value": "laughingthi010@gmail.com"
+    },
+    "company": {
+      "title": "Company Website",
+      "link": "Nature Flow Co., Ltd"
+    },
+    "products": {
+      "title": "Other Products",
+      "link": "Explore Our Portfolio"
+    },
+    "blog": {
+      "title": "Personal Blog",
+      "link": "laughingthi.com"
+    },
+    "facebook": {
+      "title": "Facebook",
+      "link": "Minh Thien Nguyen"
+    }
+  },
+  "trust": {
+    "title": "Let's Connect",
+    "body": "Whether you have a project idea, a technical question, or just want to say hi, feel free to drop a message. I'll get back to you as soon as possible."
+  },
+  "contact": {
+    "title": "Direct Feedback",
+    "subtitle": "Report bugs or share ideas for future tools.",
+    "emailCta": "Email Me",
+    "bugCta": "Report Bug",
+    "feedbackCta": "Send Feedback",
+    "githubCta": "GitHub"
+  },
+  "footer": {
+    "line": "Built with care. Thanks for visiting."
+  }
+}

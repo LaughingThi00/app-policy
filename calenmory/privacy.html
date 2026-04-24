@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Calenmory</title>
+    <style>
+        :root { --primary: #4f46e5; --text: #1f2937; --bg: #f9fafb; --border: #e5e7eb; }
+        body { font-family: sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; }
+        nav { background: #fff; border-bottom: 1px solid var(--border); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .container { max-width: 800px; margin: 2rem auto; padding: 2rem; background: #fff; border-radius: 8px; border: 1px solid var(--border); }
+        h1 { color: var(--primary); }
+        h2 { margin-top: 2rem; color: #111; font-size: 1.25rem; border-bottom: 1px solid var(--border); }
+        .lang-btn { background: var(--primary); color: #fff; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; }
+        .nav-links a { margin-left: 1rem; text-decoration: none; color: #666; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div style="font-weight: bold;">Calenmory</div>
+        <div class="nav-links">
+            <a href="index.html">Intro</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+            <button class="lang-btn" onclick="toggleLang()">EN / VI</button>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="lang en">Privacy Policy</h1>
+        <h1 class="lang vi" style="display:none">Chính sách bảo mật</h1>
+        
+        <p class="lang en">Effective Date: April 25, 2026</p>
+        <p class="lang vi" style="display:none">Ngày hiệu lực: 25 tháng 4 năm 2026</p>
+
+        <h2 class="lang en">1. Data We Collect</h2>
+        <h2 class="lang vi" style="display:none">1. Dữ liệu chúng tôi thu thập</h2>
+        <p class="lang en">We collect information to provide better services to our users. This includes:</p>
+        <p class="lang vi" style="display:none">Chúng tôi thu thập thông tin để cung cấp dịch vụ tốt hơn cho người dùng, bao gồm:</p>
+        <ul class="lang en">
+            <li><strong>Profile Information:</strong> Name, Email address, and Phone number provided during registration.</li>
+            <li><strong>App Content:</strong> Titles, descriptions, and dates of the events you create (Memory Dates).</li>
+            <li><strong>Device Data:</strong> Web Push notification tokens and timezone settings.</li>
+            <li><strong>Google Data:</strong> If you use Google Sync, we access your calendar events and profile information via OAuth.</li>
+        </ul>
+        <ul class="lang vi" style="display:none">
+            <li><strong>Thông tin hồ sơ:</strong> Tên, địa chỉ Email và số điện thoại được cung cấp khi đăng ký.</li>
+            <li><strong>Nội dung ứng dụng:</strong> Tiêu đề, mô tả và ngày của các sự kiện bạn tạo (Memory Dates).</li>
+            <li><strong>Dữ liệu thiết bị:</strong> Token thông báo Web Push và cài đặt múi giờ.</li>
+            <li><strong>Dữ liệu Google:</strong> Nếu bạn dùng Google Sync, chúng tôi truy cập sự kiện lịch và thông tin hồ sơ qua OAuth.</li>
+        </ul>
+
+        <h2 class="lang en">2. Google User Data Policy</h2>
+        <h2 class="lang vi" style="display:none">2. Chính sách dữ liệu người dùng Google</h2>
+        <p class="lang en">Calenmory's use and transfer to any other app of information received from Google APIs will adhere to the Google API Service User Data Policy, including the Limited Use requirements. We explicitly state:</p>
+        <p class="lang vi" style="display:none">Việc Calenmory sử dụng và chuyển giao thông tin nhận được từ Google API cho bất kỳ ứng dụng nào khác sẽ tuân thủ Chính sách dữ liệu người dùng dịch vụ Google API, bao gồm các yêu cầu về Sử dụng có giới hạn. Chúng tôi khẳng định:</p>
+        <ul class="lang en">
+            <li>We do NOT sell your Google user data to third parties.</li>
+            <li>We use Google data solely to sync your lunar/solar events to your Google Calendar.</li>
+            <li>We do not use your Google data for advertising purposes.</li>
+        </ul>
+        <ul class="lang vi" style="display:none">
+            <li>Chúng tôi KHÔNG bán dữ liệu người dùng Google cho bên thứ ba.</li>
+            <li>Chúng tôi chỉ sử dụng dữ liệu Google để đồng bộ các sự kiện âm/dương của bạn vào Google Calendar.</li>
+            <li>Chúng tôi không dùng dữ liệu Google cho mục đích quảng cáo.</li>
+        </ul>
+
+        <h2 class="lang en">3. Data Storage</h2>
+        <h2 class="lang vi" style="display:none">3. Lưu trữ dữ liệu</h2>
+        <p class="lang en">Your data is stored securely in MongoDB and Redis. We use JWT for session management and encryption for sensitive data. You can delete your account and all associated data at any time via the settings panel.</p>
+        <p class="lang vi" style="display:none">Dữ liệu của bạn được lưu trữ an toàn trong MongoDB và Redis. Chúng tôi sử dụng JWT để quản lý phiên và mã hóa cho dữ liệu nhạy cảm. Bạn có thể xóa tài khoản và mọi dữ liệu liên quan bất kỳ lúc nào qua bảng cài đặt nội bộ.</p>
+
+        <h2 class="lang en">4. Contact</h2>
+        <h2 class="lang vi" style="display:none">4. Liên hệ</h2>
+        <p>Email: calenmory@nature-flow.cloud</p>
+    </div>
+    <script>
+        function toggleLang() {
+            const en = document.querySelectorAll('.lang.en');
+            const vi = document.querySelectorAll('.lang.vi');
+            const isEn = en[0].style.display !== 'none';
+            en.forEach(el => el.style.display = isEn ? 'none' : 'block');
+            vi.forEach(el => el.style.display = isEn ? 'block' : 'none');
+        }
+    </script>
+</body>
+</html>

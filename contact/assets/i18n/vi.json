@@ -1,0 +1,80 @@
+{
+  "seo": {
+    "title": "Liên hệ Nguyễn Minh Thiện | Software Engineer",
+    "description": "Thông tin liên hệ của Nguyễn Minh Thiện, Software Engineer tại Công ty TNHH Nature Flow. Tìm kiếm số điện thoại, email, mạng xã hội và các liên kết chuyên môn."
+  },
+  "nav": {
+    "brand": "Nguyễn Minh Thiện",
+    "languageLabel": "Ngôn ngữ"
+  },
+  "hero": {
+    "badge": "Software Engineer",
+    "titlePrefix": "Xin chào, mình là",
+    "tagline": "Hiện đang là Software Engineer tại Công ty TNHH Nature Flow.",
+    "ctaDonate": "Liên hệ với mình",
+    "ctaContact": "Gửi phản hồi",
+    "avatarAlt": "Ảnh chân dung Nguyễn Minh Thiện"
+  },
+  "about": {
+    "title": "Giới thiệu",
+    "body": "Hiện đang là Software Engineer tại Công ty TNHH Nature Flow (Nature Flow Co., Ltd), chuyên về dịch vụ phần mềm Outsourcing, Dịch vụ giải pháp số, Thương mại điện tử, Nông nghiệp. Mình luôn nỗ lực tạo ra các ứng dụng thiết thực và công cụ gọn nhẹ, giải quyết những vấn đề hằng ngày một cách đơn giản và đáng tin cậy."
+  },
+  "value": {
+    "title": "Dịch vụ chuyên môn",
+    "item1": {
+      "title": "Phần mềm Outsourcing",
+      "desc": "Dịch vụ phát triển phần mềm chất lượng cao, tùy chỉnh theo nhu cầu doanh nghiệp."
+    },
+    "item2": {
+      "title": "Giải pháp số",
+      "desc": "Tối ưu hóa quy trình làm việc bằng các hệ thống kỹ thuật số và tự động hóa hiệu quả."
+    },
+    "item3": {
+      "title": "TMĐT & Công nghệ",
+      "desc": "Xây dựng nền tảng vững chắc cho Thương mại điện tử và các ngành đặc thù như Nông nghiệp."
+    }
+  },
+  "contact_info": {
+    "title": "Liên hệ & Mạng xã hội",
+    "subtitle": "Bạn có thể kết nối với mình qua các kênh dưới đây. Mình luôn sẵn lòng trao đổi về các cơ hội hợp tác mới.",
+    "phone": {
+      "title": "Số điện thoại / Zalo",
+      "value": "(+84) 389895377"
+    },
+    "email": {
+      "title": "Email",
+      "value": "laughingthi010@gmail.com"
+    },
+    "company": {
+      "title": "Website công ty",
+      "link": "Công ty TNHH Nature Flow"
+    },
+    "products": {
+      "title": "Các sản phẩm khác",
+      "link": "Xem danh mục sản phẩm"
+    },
+    "blog": {
+      "title": "Blog cá nhân",
+      "link": "laughingthi.com"
+    },
+    "facebook": {
+      "title": "Facebook",
+      "link": "Nguyễn Minh Thiện"
+    }
+  },
+  "trust": {
+    "title": "Kết nối ngay",
+    "body": "Dù bạn có ý tưởng dự án, câu hỏi kỹ thuật hay chỉ muốn làm quen, đừng ngần ngại gửi tin nhắn. Mình sẽ phản hồi bạn trong thời gian sớm nhất."
+  },
+  "contact": {
+    "title": "Phản hồi trực tiếp",
+    "subtitle": "Báo lỗi hoặc đề xuất ý tưởng cho các công cụ tiếp theo.",
+    "emailCta": "Gửi email",
+    "bugCta": "Báo lỗi",
+    "feedbackCta": "Gửi phản hồi",
+    "githubCta": "GitHub"
+  },
+  "footer": {
+    "line": "Xây dựng bằng sự tận tâm. Cảm ơn bạn đã ghé thăm."
+  }
+}

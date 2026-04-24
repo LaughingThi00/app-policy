@@ -8,16 +8,17 @@
     "languageLabel": "Language"
   },
   "hero": {
-    "badge": "Indie Developer",
+    "badge": "Software Engineer",
     "titlePrefix": "Hi, I am",
-    "tagline": "I build small tools to make life simpler.",
+    "tagline": "Currently a Software Engineer at Nature Flow Co., Ltd.",
     "ctaDonate": "Support My Work",
     "ctaContact": "Send Feedback",
     "avatarAlt": "Portrait of Nguyen Minh Thien"
   },
   "about": {
     "title": "About",
-    "body": "I am an indie developer creating practical apps and lightweight tools. I focus on solving everyday problems and improving workflows in simple, reliable ways. I build with care so each project stays useful and easy to use."
+    "body": "I am a Software Engineer at Nature Flow Co., Ltd, specializing in software outsourcing, digital solutions, e-commerce, and agriculture. I create practical apps and lightweight tools.",
+    "productsCta": "View Other Products"
   },
   "value": {
     "title": "What You Get",
@@ -66,7 +67,8 @@
   },
   "contact": {
     "title": "Contact & Feedback",
-    "subtitle": "Feel free to report bugs, send feedback, or share ideas for future tools.",
+    "subtitle": "Check out my contact page for detailed information or send an email directly.",
+    "pageCta": "Contact Page",
     "emailCta": "Email Me",
     "bugCta": "Report Bug",
     "feedbackCta": "Send Feedback",

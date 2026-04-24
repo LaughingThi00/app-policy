@@ -8,16 +8,17 @@
     "languageLabel": "Ngôn ngữ"
   },
   "hero": {
-    "badge": "Lập trình viên indie",
+    "badge": "Software Engineer",
     "titlePrefix": "Xin chào, mình là",
-    "tagline": "Mình xây dựng những công cụ nhỏ để cuộc sống đơn giản hơn.",
+    "tagline": "Hiện đang là Software Engineer tại Công ty TNHH Nature Flow.",
     "ctaDonate": "Ủng hộ dự án",
     "ctaContact": "Gửi phản hồi",
     "avatarAlt": "Ảnh chân dung Nguyễn Minh Thiện"
   },
   "about": {
     "title": "Giới thiệu",
-    "body": "Mình là lập trình viên indie, tạo ra các ứng dụng thiết thực và công cụ gọn nhẹ. Mình tập trung giải quyết những vấn đề hằng ngày và cải thiện quy trình làm việc theo cách đơn giản, đáng tin cậy. Mỗi dự án đều được xây dựng cẩn thận để dễ dùng và thực sự hữu ích."
+    "body": "Hiện đang là Software Engineer tại Công ty TNHH Nature Flow (Nature Flow Co., Ltd), chuyên về dịch vụ phần mềm Outsourcing, Dịch vụ giải pháp số, Thương mại điện tử, Nông nghiệp. Mình luôn nỗ lực tạo ra các ứng dụng thiết thực và công cụ gọn nhẹ.",
+    "productsCta": "Xem sản phẩm khác"
   },
   "value": {
     "title": "Giá trị bạn nhận được",
@@ -66,7 +67,8 @@
   },
   "contact": {
     "title": "Liên hệ & phản hồi",
-    "subtitle": "Bạn có thể báo lỗi, gửi góp ý hoặc đề xuất ý tưởng cho các công cụ tiếp theo.",
+    "subtitle": "Bạn có thể xem thêm thông tin liên hệ chi tiết hoặc gửi email trực tiếp.",
+    "pageCta": "Trang liên hệ",
     "emailCta": "Gửi email",
     "bugCta": "Báo lỗi",
     "feedbackCta": "Gửi phản hồi",

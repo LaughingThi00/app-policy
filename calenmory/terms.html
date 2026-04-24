@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Calenmory</title>
+    <style>
+        :root { --primary: #4f46e5; --text: #1f2937; --bg: #f9fafb; --border: #e5e7eb; }
+        body { font-family: sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; }
+        nav { background: #fff; border-bottom: 1px solid var(--border); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .container { max-width: 800px; margin: 2rem auto; padding: 2rem; background: #fff; border-radius: 8px; border: 1px solid var(--border); }
+        h1 { color: var(--primary); }
+        h2 { margin-top: 1.5rem; color: #111; font-size: 1.1rem; font-weight: 700; }
+        .lang-btn { background: var(--primary); color: #fff; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; }
+        .nav-links a { margin-left: 1rem; text-decoration: none; color: #666; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div style="font-weight: bold;">Calenmory</div>
+        <div class="nav-links">
+            <a href="index.html">Intro</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+            <button class="lang-btn" onclick="toggleLang()">EN / VI</button>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="lang en">Terms of Service</h1>
+        <h1 class="lang vi" style="display:none">Điều khoản dịch vụ</h1>
+
+        <h2 class="lang en">1. Acceptance of Terms</h2>
+        <h2 class="lang vi" style="display:none">1. Chấp nhận các điều khoản</h2>
+        <p class="lang en">By accessing or using Calenmory, you agree to be bound by these Terms of Service. If you do not agree, do not use the service.</p>
+        <p class="lang vi" style="display:none">Bằng cách truy cập hoặc sử dụng Calenmory, bạn đồng ý tuân thủ các Điều khoản dịch vụ này. Nếu bạn không đồng ý, vui lòng không sử dụng dịch vụ.</p>
+
+        <h2 class="lang en">2. Description of Service</h2>
+        <h2 class="lang vi" style="display:none">2. Mô tả dịch vụ</h2>
+        <p class="lang en">Calenmory provides tools for creating memory dates, managing lunar/solar calendars, receiving multi-channel notifications, and syncing data with external calendar services.</p>
+        <p class="lang vi" style="display:none">Calenmory cung cấp các công cụ để tạo ngày kỷ niệm, quản lý lịch âm/dương, nhận thông báo đa kênh và đồng bộ hóa dữ liệu với các dịch vụ lịch bên ngoài.</p>
+
+        <h2 class="lang en">3. User Responsibilities</h2>
+        <h2 class="lang vi" style="display:none">3. Trách nhiệm người dùng</h2>
+        <p class="lang en">You are responsible for maintaining the confidentiality of your account tokens and for all activities that occur under your account. You agree not to use the service for any illegal or unauthorized purpose.</p>
+        <p class="lang vi" style="display:none">Bạn chịu trách nhiệm bảo mật các token tài khoản của mình và cho mọi hoạt động xảy ra dưới tài khoản của bạn. Bạn đồng ý không sử dụng dịch vụ cho bất kỳ mục đích bất hợp pháp hoặc không được phép nào.</p>
+
+        <h2 class="lang en">4. Subscription and Limits</h2>
+        <h2 class="lang vi" style="display:none">4. Thuê bao và Giới hạn</h2>
+        <p class="lang en">Free accounts are subject to certain limits (e.g., maximum number of events). Premium features require a paid subscription. We reserve the right to modify these limits at any time.</p>
+        <p class="lang vi" style="display:none">Các tài khoản miễn phí phải tuân theo một số giới hạn nhất định (ví dụ: số lượng sự kiện tối đa). Các tính năng cao cấp yêu cầu đăng ký trả phí. Chúng tôi có quyền sửa đổi các giới hạn này bất cứ lúc nào.</p>
+
+        <h2 class="lang en">5. Limitation of Liability</h2>
+        <h2 class="lang vi" style="display:none">5. Giới hạn trách nhiệm</h2>
+        <p class="lang en">Calenmory is provided "as is" without any warranty. We are not liable for any data loss, missed notifications, or damages resulting from the use of the service.</p>
+        <p class="lang vi" style="display:none">Calenmory được cung cấp "nguyên trạng" mà không có bất kỳ bảo đảm nào. Chúng tôi không chịu trách nhiệm cho bất kỳ tổn thất dữ liệu, thông báo bị lỡ hoặc thiệt hại nào phát sinh từ việc sử dụng dịch vụ.</p>
+
+        <h2 class="lang en">6. Termination</h2>
+        <h2 class="lang vi" style="display:none">6. Chấm dứt</h2>
+        <p class="lang en">We reserve the right to suspend or terminate your account if you violate these terms or engage in behavior harmful to the service or other users.</p>
+        <p class="lang vi" style="display:none">Chúng tôi có quyền tạm ngừng hoặc chấm dứt tài khoản của bạn nếu bạn vi phạm các điều khoản này hoặc có hành vi gây hại cho dịch vụ hoặc người dùng khác.</p>
+    </div>
+    <script>
+        function toggleLang() {
+            const en = document.querySelectorAll('.lang.en');
+            const vi = document.querySelectorAll('.lang.vi');
+            const isEn = en[0].style.display !== 'none';
+            en.forEach(el => el.style.display = isEn ? 'none' : 'block');
+            vi.forEach(el => el.style.display = isEn ? 'block' : 'none');
+        }
+    </script>
+</body>
+</html>
