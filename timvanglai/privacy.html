@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Tìm sân cầu lông vãng lai</title>
+  <meta name="description" content="Privacy policy for Tìm sân cầu lông vãng lai. Bilingual EN/VI." />
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      font-size: 0.98rem;
+    }
+    a { color: var(--accent); }
+    a:hover { color: var(--accent-hover); }
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 1.25rem; }
+    .bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding: 0.85rem 0;
+    }
+    nav { display: flex; flex-wrap: wrap; gap: 1rem; font-size: 0.95rem; }
+    nav a { color: var(--text); font-weight: 500; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    nav a[aria-current="page"] { color: var(--accent); }
+    .lang-toggle {
+      display: flex;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--card);
+    }
+    .lang-toggle button {
+      border: none;
+      background: transparent;
+      padding: 0.4rem 0.75rem;
+      cursor: pointer;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .lang-toggle button.active { background: var(--accent); color: #fff; }
+    main { padding: 1.75rem 0 3rem; }
+    h1 { font-size: 1.45rem; margin: 0 0 0.25rem; }
+    .updated { color: var(--muted); font-size: 0.9rem; margin: 0 0 1.5rem; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.1rem 1.35rem;
+      margin-bottom: 0.85rem;
+    }
+    section h2 { font-size: 1.05rem; margin: 0 0 0.6rem; }
+    section h3 { font-size: 0.95rem; margin: 1rem 0 0.4rem; }
+    p { margin: 0.5rem 0; }
+    ul { margin: 0.4rem 0; padding-left: 1.2rem; }
+    li { margin-bottom: 0.3rem; }
+    .lang.vi { display: none; }
+    body.show-vi .lang.en { display: none; }
+    body.show-vi .lang.vi { display: block; }
+    .site-footer {
+      margin-top: 2rem;
+      padding: 1.5rem 0 2rem;
+      border-top: 2px solid var(--border);
+      background: var(--card);
+      font-size: 0.88rem;
+    }
+    .site-footer .footer-inner { max-width: 720px; margin: 0 auto; padding: 0 1.25rem; }
+    .site-footer p { margin: 0.45rem 0; color: var(--muted); }
+    .site-footer .footer-bilingual { display: grid; gap: 0.35rem; margin-top: 0.85rem; }
+    @media (min-width: 560px) {
+      .site-footer .footer-bilingual { grid-template-columns: 1fr 1fr; gap: 1rem; }
+    }
+    .box-highlight {
+      border-left: 4px solid var(--accent);
+      padding-left: 0.85rem;
+      margin: 0.75rem 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap bar">
+      <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" id="btn-en" class="active" aria-pressed="true">EN</button>
+        <button type="button" id="btn-vi" aria-pressed="false">VI</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="lang en">
+      <h1>Privacy Policy</h1>
+      <p class="updated"><strong>Tìm sân cầu lông vãng lai</strong> — Last updated: April 25, 2026</p>
+
+      <section>
+        <h2>1. Who this covers</h2>
+        <p>This Policy describes how the <strong>Tìm sân cầu lông vãng lai</strong> web application and its backend API (the “<strong>Service</strong>”) collect, use, store, and share information when you use features that are implemented in the current product (including account access, court and listing features, groups, uploads, and payments).</p>
+      </section>
+
+      <section>
+        <h2>2. Information we collect (mapped to the codebase)</h2>
+        <h3>2.1 Account &amp; authentication</h3>
+        <ul>
+          <li><strong>Email address</strong>, <strong>full name</strong> (display name), and <strong>Google subject identifier (<code>sub</code>)</strong> when you sign in with Google — obtained from the Google-issued ID token verified on the server.</li>
+          <li><strong>Email address</strong> and a <strong>password</strong> (stored only as a one-way password hash on the server) when you use email/password login for an account that was provisioned that way.</li>
+          <li><strong>JWT access token</strong> and <strong>refresh token</strong>: issued by the Service; refresh token fingerprints are stored in the database; tokens may be held in browser storage on your device for session continuity.</li>
+          <li><strong>Role</strong> (for example, customer vs. administrator) and <strong>account status</strong> flags maintained in the user record.</li>
+        </ul>
+        <h3>2.2 Profile &amp; in-app economy</h3>
+        <ul>
+          <li><strong>Phone number</strong>, <strong>biography</strong>, <strong>avatar image</strong> (storage key or URL), <strong>Long Xu balance</strong>, <strong>VIP tier</strong>, <strong>VIP expiry</strong>, and optional <strong>custom VIP label</strong> (where applicable).</li>
+          <li><strong>Badminton CV</strong> fields you edit (headline, objectives, achievements, contact summary, styling choices, optional avatar override).</li>
+        </ul>
+        <h3>2.3 Content you create</h3>
+        <ul>
+          <li><strong>Courts</strong>: names, addresses (legacy and current administrative subdivisions as structured in the app), Google Maps URLs, optional owner phone, coordinates, photos, video links, cached public business metadata from Google (e.g., rating counts, place types), and optional reviewer notes.</li>
+          <li><strong>Listings</strong>: titles, descriptions, dates, session schedules, skill labels, pricing, player counts, contact channels (e.g., Zalo/Facebook URLs, phone), payment QR images, and links to originating groups or schedules when used.</li>
+          <li><strong>Groups (“vanguard”)</strong>: names, descriptions, weekly slot templates, media, payment QR images, join links.</li>
+          <li><strong>Pairing seeks</strong>: display name, gender, age range, handedness, area fields, narrative text, media, contacts.</li>
+          <li><strong>Reports or admin actions</strong> tied to moderation workflows present in the product.</li>
+        </ul>
+        <h3>2.4 Payments</h3>
+        <ul>
+          <li>Records required to operate <strong>Pay2S</strong> pending payments and webhooks: transfer references, amounts, package identifiers, VIP selections, and payment status as modeled in the database (exact fields depend on processor payloads).</li>
+        </ul>
+        <h3>2.5 Technical &amp; operational data</h3>
+        <ul>
+          <li><strong>Server logs</strong> may be created by hosting infrastructure (standard HTTP logs, error logs) — scope depends on deployment, not fully specified in application source.</li>
+          <li><strong>Vercel Analytics</strong> may run on the production web build and collect usage metrics according to Vercel’s documentation.</li>
+          <li><strong>API traffic</strong> is subject to rate limiting parameters configured for the Service.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. How we collect it</h2>
+        <ul>
+          <li><strong>Direct input</strong> through forms in the web client.</li>
+          <li><strong>Google OAuth (Sign-In)</strong> via Google Identity Services; the browser receives an ID token that the API verifies server-side.</li>
+          <li><strong>Google Maps Platform APIs</strong> (server-side, using an API key) when resolving a Google Maps URL into place details that staff or tools import into court records — this processes <em>public place information</em>, not the contents of your personal Google account.</li>
+          <li><strong>File uploads</strong> (images/videos) through authenticated upload endpoints; files are stored in cloud object storage and referenced by storage keys in the database.</li>
+          <li><strong>Payment provider callbacks</strong> (Pay2S webhook) for confirming purchases.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. How we use information (feature mapping)</h2>
+        <ul>
+          <li>Authenticate you and keep your session secure (JWT issuance, refresh rotation logic).</li>
+          <li>Display and search courts, listings, groups, and pairing posts you or others publish.</li>
+          <li>Operate Long Xu debits/credits and VIP entitlements after successful payment confirmation.</li>
+          <li>Store media you attach to profiles, courts, listings, groups, or QR images.</li>
+          <li>Maintain administrative workflows (court approval, bulk import helpers, reports).</li>
+          <li>Improve reliability and security (rate limiting, error monitoring as configured in deployment).</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. Google user data (Limited Use)</h2>
+        <div class="box-highlight">
+          <p>When you choose <strong>Sign in with Google</strong>, the Service verifies your Google ID token and reads only what is needed to operate accounts in this product:</p>
+          <ul>
+            <li><strong>Email address</strong> — unique account identifier and communication channel for account-related notices you request.</li>
+            <li><strong>Name</strong> — prefills your display name in the profile.</li>
+            <li><strong>Google account subject ID (<code>sub</code>)</strong> — links your Service account to your Google identity for future sign-ins.</li>
+          </ul>
+          <p>We <strong>do not</strong> use Google user data to serve general advertisements. We <strong>do not sell</strong> your personal information. We <strong>do not</strong> access Gmail, Google Drive files, or Google Calendar through this sign-in flow based on the current implementation.</p>
+          <p>You can review and revoke the Service’s access to your Google account at any time via Google’s permissions page:<br />
+            <a href="https://myaccount.google.com/permissions" rel="noopener noreferrer">https://myaccount.google.com/permissions</a></p>
+        </div>
+      </section>
+
+      <section>
+        <h2>6. Storage &amp; retention</h2>
+        <ul>
+          <li>Primary application data is stored in a <strong>MongoDB</strong> database (including users, courts, listings, groups, payments-related documents, refresh token records, and content collections).</li>
+          <li>Binary uploads are stored in <strong>cloud object storage</strong> (Google Cloud Storage integration in code) and referenced from MongoDB.</li>
+          <li><strong>Retention:</strong> the codebase does not define automatic deletion timelines. Data is kept for as long as your account exists and as needed to provide the Service, comply with law, resolve disputes, or enforce agreements. Deletion mechanics for end users are not fully specified in source — contact the development team using the link in the footer to request assistance.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>7. Sharing</h2>
+        <ul>
+          <li><strong>Other users</strong> see information you deliberately publish (for example, listing contact links, public court pages, group descriptions).</li>
+          <li><strong>Google</strong> receives OAuth authentication requests when you sign in; <strong>Google Maps Platform</strong> receives server queries for public place data when URLs are resolved.</li>
+          <li><strong>Pay2S</strong> (or successor payment integration configured in the deployment) receives payment instructions needed to complete top-ups or VIP purchases.</li>
+          <li><strong>Hosting and infrastructure providers</strong> (for example, Vercel for the frontend in production, database host, object storage) process data as subprocessors necessary to run the Service.</li>
+          <li>We do <strong>not</strong> sell personal information.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>8. Security</h2>
+        <ul>
+          <li>Passwords are stored using one-way hashing (bcrypt parameters defined in application constants).</li>
+          <li>Google ID tokens are verified with Google’s libraries against the configured OAuth client ID.</li>
+          <li>Authenticated API routes require valid JWTs; refresh tokens are stored hashed in the database.</li>
+          <li>Payment webhooks require a shared secret configured server-side.</li>
+          <li>No method of electronic storage is perfectly secure; we apply reasonable safeguards appropriate to a web service of this type.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>9. Your rights &amp; choices</h2>
+        <ul>
+          <li>You may <strong>review or update</strong> much of your profile data inside the app where those screens are available.</li>
+          <li>You may <strong>disconnect Google</strong> from the Service’s perspective by revoking access in your Google account settings (you may lose Google-based sign-in until you reconnect).</li>
+          <li>Depending on applicable law, you may have rights to <strong>access, correct, delete, restrict, or port</strong> data. Because workflows vary by deployment, submit requests through the contact page linked in the footer.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>10. Children’s privacy</h2>
+        <p>The Service is intended for a general audience of sports participants and is not directed to children under 13 (or the minimum age required locally). Pairing and profile features may collect age ranges you supply. If you believe a child has provided personal information without appropriate consent, contact us via the footer link.</p>
+      </section>
+
+      <section>
+        <h2>11. International transfers</h2>
+        <p>Servers and subprocessors may be located outside your country of residence. By using the Service, you acknowledge that information may be processed where providers operate facilities.</p>
+      </section>
+
+      <section>
+        <h2>12. Changes</h2>
+        <p>We may update this Policy to reflect product or legal changes. The “Last updated” date will be revised; material changes may be communicated through the Service or contact channels where practicable.</p>
+      </section>
+
+      <section>
+        <h2>13. Contact</h2>
+        <p>For privacy inquiries, use the development team contact page (also repeated in the site footer):<br />
+          <a href="https://laughingthi00.github.io/app-policy/contact/" rel="noopener noreferrer">https://laughingthi00.github.io/app-policy/contact/</a></p>
+      </section>
+    </div>
+
+    <div class="lang vi">
+      <h1>Chính sách quyền riêng tư</h1>
+      <p class="updated"><strong>Tìm sân cầu lông vãng lai</strong> — Cập nhật: 25 tháng 4, 2026</p>
+
+      <section>
+        <h2>1. Phạm vi</h2>
+        <p>Chính sách này mô tả cách ứng dụng web <strong>Tìm sân cầu lông vãng lai</strong> và API phía máy chủ (“<strong>Dịch vụ</strong>”) thu thập, dùng, lưu và chia sẻ thông tin khi bạn dùng các tính năng đã triển khai (tài khoản, sân, tin tìm người, nhóm, tải lên, thanh toán).</p>
+      </section>
+
+      <section>
+        <h2>2. Thông tin thu thập (theo code)</h2>
+        <h3>2.1 Tài khoản &amp; xác thực</h3>
+        <ul>
+          <li><strong>Email</strong>, <strong>họ tên hiển thị</strong>, <strong>mã định danh Google (<code>sub</code>)</strong> khi đăng nhập Google — lấy từ ID token do Google cấp, xác minh trên server.</li>
+          <li><strong>Email</strong> và <strong>mật khẩu</strong> (chỉ lưu dạng băm một chiều) nếu dùng đăng nhập email/mật khẩu.</li>
+          <li><strong>JWT</strong> và <strong>refresh token</strong>: refresh được lưu dạng băm trong DB; token có thể nằm trong bộ nhớ trình duyệt.</li>
+          <li><strong>Vai trò</strong> (khách/quản trị) và cờ trạng thái tài khoản.</li>
+        </ul>
+        <h3>2.2 Hồ sơ &amp; kinh tế trong app</h3>
+        <ul>
+          <li><strong>SĐT</strong>, <strong>tiểu sử</strong>, <strong>ảnh đại diện</strong>, <strong>số dư Lông xu</strong>, <strong>tier VIP</strong>, <strong>hạn VIP</strong>, <strong>nhãn VIP tùy chỉnh</strong> (nếu có).</li>
+          <li>Dữ liệu <strong>CV cầu lông</strong> bạn nhập.</li>
+        </ul>
+        <h3>2.3 Nội dung bạn tạo</h3>
+        <ul>
+          <li><strong>Sân</strong>: tên, địa chỉ, URL Maps, tọa độ, ảnh/video, metadata công khai từ Google (ví dụ điểm đánh giá), SĐT chủ sân tùy chọn.</li>
+          <li><strong>Listing</strong>: tiêu đề, mô tả, ngày, ca, mức giá, số người, kênh liên hệ, ảnh QR, liên kết nhóm/lịch nếu dùng.</li>
+          <li><strong>Nhóm vanguard</strong>: mô tả, lịch tuần, media, QR, link tham gia.</li>
+          <li><strong>Tìm ghép</strong>: tên hiển thị, giới tính, độ tuổi, tay thuận, khu vực, mô tả, media, liên hệ.</li>
+          <li>Báo cáo/quy trình quản trị có trong sản phẩm.</li>
+        </ul>
+        <h3>2.4 Thanh toán</h3>
+        <ul>
+          <li>Bản ghi phục vụ <strong>Pay2S</strong> (giao dịch chờ, webhook): mã giao dịch, gói, VIP, trạng thái theo mô hình DB.</li>
+        </ul>
+        <h3>2.5 Kỹ thuật</h3>
+        <ul>
+          <li>Nhật ký máy chủ tùy môi trường triển khai.</li>
+          <li><strong>Vercel Analytics</strong> có thể chạy trên bản production.</li>
+          <li>Giới hạn tần suất API theo cấu hình.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. Phương thức thu thập</h2>
+        <ul>
+          <li>Nhập trực tiếp trên web.</li>
+          <li><strong>Google OAuth</strong>; server xác minh ID token.</li>
+          <li><strong>Google Maps Platform</strong> phía server khi resolve URL Maps thành thông tin địa điểm công khai — không truy cập Gmail/Drive/Calendar của bạn qua luồng đăng nhập hiện tại.</li>
+          <li><strong>Upload file</strong> qua API có xác thực; lưu object storage.</li>
+          <li>Webhook <strong>Pay2S</strong>.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. Mục đích sử dụng</h2>
+        <ul>
+          <li>Xác thực và duy trì phiên.</li>
+          <li>Hiển thị/tìm kiếm sân, listing, nhóm, tin ghép.</li>
+          <li>Vận hành Lông xu và VIP sau thanh toán.</li>
+          <li>Lưu media bạn đính kèm.</li>
+          <li>Quy trình quản trị (duyệt sân, nhập hàng loạt, báo cáo).</li>
+          <li>An toàn và vận hành (rate limit, log lỗi theo triển khai).</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. Dữ liệu người dùng Google</h2>
+        <div class="box-highlight">
+          <p>Khi bạn <strong>Đăng nhập bằng Google</strong>, Dịch vụ xác minh ID token và chỉ dùng phần cần thiết:</p>
+          <ul>
+            <li><strong>Email</strong> — định danh tài khoản.</li>
+            <li><strong>Tên</strong> — điền sẵn tên hiển thị.</li>
+            <li><strong><code>sub</code></strong> — liên kết tài khoản với Google cho lần đăng nhập sau.</li>
+          </ul>
+          <p>Chúng tôi <strong>không bán</strong> dữ liệu cá nhân. Không dùng dữ liệu Google để quảng cáo bên thứ ba theo phạm vi triển khai hiện tại. Không truy cập Gmail/Drive/Calendar qua luồng này.</p>
+          <p>Bạn có thể xem và <strong>thu hồi quyền</strong> tại:<br />
+            <a href="https://myaccount.google.com/permissions" rel="noopener noreferrer">https://myaccount.google.com/permissions</a></p>
+        </div>
+      </section>
+
+      <section>
+        <h2>6. Lưu trữ &amp; lưu giữ</h2>
+        <ul>
+          <li>Ứng dụng dùng <strong>MongoDB</strong> làm DB chính.</li>
+          <li>File trên <strong>object storage</strong> (tích hợp GCS trong code).</li>
+          <li>Code không quy định thời hạn xóa tự động; dữ liệu giữ trong phạm vi vận hành Dịch vụ và nghĩa vụ pháp lý. Yêu cầu xóa qua liên hệ chân trang.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>7. Chia sẻ</h2>
+        <ul>
+          <li>Người dùng khác thấy phần bạn <strong>công khai</strong> (listing, trang sân, nhóm).</li>
+          <li><strong>Google</strong> xử lý OAuth; <strong>Google Maps Platform</strong> nhận truy vấn địa điểm công khai khi resolve URL.</li>
+          <li><strong>Pay2S</strong> nhận thông tin cần để thanh toán.</li>
+          <li>Nhà cung cấp hosting (ví dụ Vercel), DB, storage xử lý với tư cách phụ trợ.</li>
+          <li><strong>Không bán</strong> dữ liệu.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>8. Bảo mật</h2>
+        <ul>
+          <li>Mật khẩu băm bcrypt.</li>
+          <li>ID token Google xác minh bằng thư viện Google và client ID.</li>
+          <li>API có bảo vệ JWT; refresh token lưu băm.</li>
+          <li>Webhook thanh toán yêu cầu bí mật cấu hình.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>9. Quyền &amp; lựa chọn</h2>
+        <ul>
+          <li>Xem/sửa nhiều mục trong app khi có màn hình tương ứng.</li>
+          <li>Thu hồi Google tại tài khoản Google.</li>
+          <li>Quyền theo luật địa phương (truy cập, sửa, xóa…) — gửi yêu cầu qua trang liên hệ chân trang.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>10. Trẻ em</h2>
+        <p>Dịch vụ không nhắm vào trẻ dưới 13 tuổi (hoặc độ tuổi tối thiểu tại địa phương). Tính năng ghép cặp có thể ghi nhận khoảng tuổi do bạn nhập. Nếu nghi ngờ trẻ em cung cấp dữ liệu thiếu đồng ý, hãy liên hệ.</p>
+      </section>
+
+      <section>
+        <h2>11. Chuyển giao quốc tế</h2>
+        <p>Máy chủ và nhà cung cấp có thể đặt ngoài quốc gia của bạn; dữ liệu có thể được xử lý tại đó.</p>
+      </section>
+
+      <section>
+        <h2>12. Thay đổi</h2>
+        <p>Chúng tôi có thể cập nhật Chính sách; ngày “Cập nhật” sẽ đổi; thay đổi quan trọng có thể thông báo qua Dịch vụ hoặc kênh liên hệ.</p>
+      </section>
+
+      <section>
+        <h2>13. Liên hệ</h2>
+        <p>Thắc mắc quyền riêng tư:<br />
+          <a href="https://laughingthi00.github.io/app-policy/contact/" rel="noopener noreferrer">https://laughingthi00.github.io/app-policy/contact/</a></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-bilingual">
+        <div>
+          <p><strong>Contact development team</strong></p>
+          <p><a href="https://laughingthi00.github.io/app-policy/contact/" rel="noopener noreferrer">https://laughingthi00.github.io/app-policy/contact/</a></p>
+        </div>
+        <div>
+          <p><strong>Liên hệ nhóm phát triển</strong></p>
+          <p><a href="https://laughingthi00.github.io/app-policy/contact/" rel="noopener noreferrer">https://laughingthi00.github.io/app-policy/contact/</a></p>
+        </div>
+      </div>
+      <div class="footer-bilingual" style="margin-top:1rem">
+        <div>
+          <p><strong>Explore more products</strong></p>
+          <p><a href="https://nature-flow.cloud/product" rel="noopener noreferrer">https://nature-flow.cloud/product</a></p>
+        </div>
+        <div>
+          <p><strong>Khám phá thêm sản phẩm</strong></p>
+          <p><a href="https://nature-flow.cloud/product" rel="noopener noreferrer">https://nature-flow.cloud/product</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var body = document.body;
+      var btnEn = document.getElementById('btn-en');
+      var btnVi = document.getElementById('btn-vi');
+      function setLang(vi) {
+        if (vi) {
+          body.classList.add('show-vi');
+          btnVi.classList.add('active');
+          btnEn.classList.remove('active');
+          btnVi.setAttribute('aria-pressed', 'true');
+          btnEn.setAttribute('aria-pressed', 'false');
+          document.documentElement.lang = 'vi';
+        } else {
+          body.classList.remove('show-vi');
+          btnEn.classList.add('active');
+          btnVi.classList.remove('active');
+          btnEn.setAttribute('aria-pressed', 'true');
+          btnVi.setAttribute('aria-pressed', 'false');
+          document.documentElement.lang = 'en';
+        }
+        try { localStorage.setItem('tvl_pages_lang', vi ? 'vi' : 'en'); } catch (e) {}
+      }
+      btnEn.addEventListener('click', function () { setLang(false); });
+      btnVi.addEventListener('click', function () { setLang(true); });
+      try {
+        if (localStorage.getItem('tvl_pages_lang') === 'vi') setLang(true);
+      } catch (e) {}
+    })();
+  </script>
+</body>
+</html>

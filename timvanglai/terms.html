@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Service — Tìm sân cầu lông vãng lai</title>
+  <meta name="description" content="Terms of service for Tìm sân cầu lông vãng lai. Bilingual EN/VI." />
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      font-size: 0.98rem;
+    }
+    a { color: var(--accent); }
+    a:hover { color: var(--accent-hover); }
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 1.25rem; }
+    .bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding: 0.85rem 0;
+    }
+    nav { display: flex; flex-wrap: wrap; gap: 1rem; font-size: 0.95rem; }
+    nav a { color: var(--text); font-weight: 500; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    nav a[aria-current="page"] { color: var(--accent); }
+    .lang-toggle {
+      display: flex;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--card);
+    }
+    .lang-toggle button {
+      border: none;
+      background: transparent;
+      padding: 0.4rem 0.75rem;
+      cursor: pointer;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .lang-toggle button.active { background: var(--accent); color: #fff; }
+    main { padding: 1.75rem 0 3rem; }
+    h1 { font-size: 1.45rem; margin: 0 0 0.25rem; }
+    .updated { color: var(--muted); font-size: 0.9rem; margin: 0 0 1.5rem; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.1rem 1.35rem;
+      margin-bottom: 0.85rem;
+    }
+    section h2 { font-size: 1.05rem; margin: 0 0 0.6rem; }
+    p { margin: 0.5rem 0; }
+    ul { margin: 0.4rem 0; padding-left: 1.2rem; }
+    li { margin-bottom: 0.3rem; }
+    .lang.vi { display: none; }
+    body.show-vi .lang.en { display: none; }
+    body.show-vi .lang.vi { display: block; }
+    .site-footer {
+      margin-top: 2rem;
+      padding: 1.5rem 0 2rem;
+      border-top: 2px solid var(--border);
+      background: var(--card);
+      font-size: 0.88rem;
+    }
+    .site-footer .footer-inner { max-width: 720px; margin: 0 auto; padding: 0 1.25rem; }
+    .site-footer p { margin: 0.45rem 0; color: var(--muted); }
+    .site-footer .footer-bilingual { display: grid; gap: 0.35rem; margin-top: 0.85rem; }
+    @media (min-width: 560px) {
+      .site-footer .footer-bilingual { grid-template-columns: 1fr 1fr; gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap bar">
+      <nav aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html" aria-current="page">Terms</a>
+      </nav>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" id="btn-en" class="active" aria-pressed="true">EN</button>
+        <button type="button" id="btn-vi" aria-pressed="false">VI</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="lang en">
+      <h1>Terms of Service</h1>
+      <p class="updated"><strong>Tìm sân cầu lông vãng lai</strong> — Last updated: April 25, 2026</p>
+
+      <section>
+        <h2>1. Acceptance</h2>
+        <p>By accessing or using the <strong>Tìm sân cầu lông vãng lai</strong> website, client application, or API (together, the “<strong>Service</strong>”), you agree to these Terms. If you do not agree, do not use the Service.</p>
+      </section>
+
+      <section>
+        <h2>2. Description of the Service</h2>
+        <p>The Service, as implemented in the current product, may include:</p>
+        <ul>
+          <li>A directory of <strong>badminton courts</strong> with addresses, media, map links, and—when available—public metadata sourced from Google Maps business listings.</li>
+          <li>User-submitted <strong>court proposals</strong> subject to administrative review.</li>
+          <li><strong>Listings</strong> to find players for specific dates, including schedules, pricing, and contact methods.</li>
+          <li><strong>Groups</strong> with recurring weekly slots and optional payment QR codes and chat join links.</li>
+          <li><strong>Pairing seeks</strong> to match players by profile attributes and area.</li>
+          <li>A <strong>badminton CV</strong> builder tied to your account.</li>
+          <li>An in-app balance (“<strong>Long Xu</strong>”) and <strong>VIP subscription tiers</strong> unlocked through the integrated payment flow.</li>
+          <li><strong>Authentication</strong> via Google Sign-In and/or email and password, depending on configuration and account type.</li>
+        </ul>
+        <p>Features may be enabled, limited, or discontinued as the deployment changes. Certain flows require valid server configuration (for example, API keys for Maps or payment credentials).</p>
+      </section>
+
+      <section>
+        <h2>3. Accounts</h2>
+        <ul>
+          <li>You must provide accurate information where the Service requests it.</li>
+          <li>You are responsible for activity under your credentials. Protect device access if you remain signed in.</li>
+          <li>Administrators may have additional capabilities; misuse of elevated access is prohibited.</li>
+          <li>New accounts may primarily be created through <strong>Google Sign-In</strong> in the current client; email/password registration may not be exposed publicly even though the backend can store password hashes for provisioned accounts.</li>
+          <li>Password recovery via the “forgot password” screen may be incomplete until a backend workflow exists — use Google sign-in or contact support if locked out.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. Acceptable use</h2>
+        <ul>
+          <li>Do not post unlawful, fraudulent, harassing, discriminatory, or dangerous content.</li>
+          <li>Do not impersonate others or misrepresent court ownership or affiliation.</li>
+          <li>Do not attempt to bypass authentication, scrape the Service in a way that impairs operations, or probe security without authorization.</li>
+          <li>Contact information you publish (Zalo, Facebook, phone numbers) may be copied by other users — publish only what you are comfortable sharing publicly.</li>
+          <li>Long Xu and VIP entitlements follow product rules encoded in the deployment; attempting to manipulate balances or payments is prohibited.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. Google integrations</h2>
+        <ul>
+          <li><strong>Google Sign-In</strong> is subject to Google’s terms and policies. You grant the Service permission to verify tokens and read basic profile fields needed for login (email, name, Google subject ID).</li>
+          <li><strong>Google Maps Platform</strong> data is retrieved server-side when resolving Maps URLs into place details. That data may be cached in court records. You must not use the Service to violate Google Maps Platform terms or to misrepresent business information.</li>
+          <li>If Google suspends an integration or changes APIs, parts of the Service may degrade until updated.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. Your content &amp; license</h2>
+        <p>You retain ownership of content you submit. To operate the Service, you grant the operators a non-exclusive license to host, process, display, and distribute your content within the Service (including to other users who can view public pages) and to maintain backups or derived indexes as technically required.</p>
+        <p>You represent that you have the rights to upload media and share contact channels you provide.</p>
+      </section>
+
+      <section>
+        <h2>7. Third-party services &amp; payments</h2>
+        <p>Payments are processed through the <strong>Pay2S</strong> integration configured for the deployment. Charges, refunds, and disputes may also be governed by that provider’s rules. The Service records payment outcomes to update Long Xu or VIP status.</p>
+      </section>
+
+      <section>
+        <h2>8. Availability &amp; changes</h2>
+        <p>The Service is provided on an “as available” basis. Maintenance, outages, misconfiguration, or third-party failures may interrupt access. We may modify, suspend, or discontinue features with or without notice where reasonable.</p>
+      </section>
+
+      <section>
+        <h2>9. Disclaimers</h2>
+        <p>The Service facilitates discovery and coordination; it does not guarantee court availability, player skill levels, payment settlement between private parties, or safety at physical venues. Map data and ratings may be incomplete or stale. You assume risks of offline meetings and transactions.</p>
+        <p>To the fullest extent permitted by law, the Service is provided <strong>without warranties of merchantability, fitness for a particular purpose, or non-infringement</strong>.</p>
+      </section>
+
+      <section>
+        <h2>10. Limitation of liability</h2>
+        <p>To the maximum extent permitted by applicable law, the operators and contributors are not liable for indirect, incidental, special, consequential, or punitive damages, or for loss of profits, data, or goodwill, arising from your use of the Service.</p>
+        <p>Aggregate liability for direct damages shall not exceed the greater of (a) amounts you paid for VIP or top-ups through the Service in the three months preceding the claim or (b) fifty U.S. dollars, except where limitation is prohibited by law.</p>
+      </section>
+
+      <section>
+        <h2>11. Indemnity</h2>
+        <p>You agree to indemnify and hold harmless the operators from claims arising out of your content, your misuse of the Service, or your violation of these Terms or third-party rights.</p>
+      </section>
+
+      <section>
+        <h2>12. Termination</h2>
+        <p>We may suspend or terminate accounts that violate these Terms or present security risk. You may stop using the Service at any time. Provisions that by nature should survive (disclaimers, liability limits, indemnity) will survive termination.</p>
+      </section>
+
+      <section>
+        <h2>13. Intellectual property</h2>
+        <p>The Service’s branding, UI composition, and original code are protected by intellectual property laws. Except for your content or third-party components under their own licenses, you may not copy, reverse engineer, or create derivative works without permission.</p>
+      </section>
+
+      <section>
+        <h2>14. Changes to these Terms</h2>
+        <p>We may update these Terms. The “Last updated” date reflects revisions. Continued use after changes constitutes acceptance where permitted by law.</p>
+      </section>
+
+      <section>
+        <h2>15. Governing law</h2>
+        <p>Unless mandatory local law requires otherwise, these Terms are governed by the laws applicable to the operating entity responsible for the deployment, without regard to conflict-of-law rules. Courts in that jurisdiction have exclusive venue, subject to non-waivable consumer protections where you reside.</p>
+        <p class="updated" style="margin-top:0.75rem">If you need the legal entity name or registered address for a specific deployment, request it via the contact page in the footer.</p>
+      </section>
+
+      <section>
+        <h2>16. Contact</h2>
+        <p><a href="https://laughingthi00.github.io/app-policy/contact/" rel="noopener noreferrer">https://laughingthi00.github.io/app-policy/contact/</a></p>
+      </section>
+    </div>
+
+    <div class="lang vi">
+      <h1>Điều khoản dịch vụ</h1>
+      <p class="updated"><strong>Tìm sân cầu lông vãng lai</strong> — Cập nhật: 25 tháng 4, 2026</p>
+
+      <section>
+        <h2>1. Chấp nhận</h2>
+        <p>Khi truy cập hoặc dùng website/ứng dụng/API <strong>Tìm sân cầu lông vãng lai</strong> (“<strong>Dịch vụ</strong>”), bạn đồng ý các Điều khoản này. Nếu không đồng ý, vui lòng không sử dụng.</p>
+      </section>
+
+      <section>
+        <h2>2. Mô tả Dịch vụ</h2>
+        <p>Theo bản triển khai hiện tại, Dịch vụ có thể gồm:</p>
+        <ul>
+          <li>Danh mục <strong>sân cầu lông</strong> với địa chỉ, media, link bản đồ và khi có thì metadata công khai từ Google Maps.</li>
+          <li><strong>Gửi sân mới</strong> chờ quản trị duyệt.</li>
+          <li><strong>Listing</strong> tìm người theo ngày, giờ, giá, kênh liên hệ.</li>
+          <li><strong>Nhóm</strong> với khung giờ tuần, QR thanh toán, link tham gia chat.</li>
+          <li><strong>Tìm ghép</strong> theo hồ sơ và khu vực.</li>
+          <li><strong>CV cầu lông</strong> gắn tài khoản.</li>
+          <li>Số dư <strong>Lông xu</strong> và <strong>gói VIP</strong> qua luồng thanh toán tích hợp.</li>
+          <li><strong>Đăng nhập</strong> Google và/hoặc email-mật khẩu tùy cấu hình.</li>
+        </ul>
+        <p>Tính năng có thể thay đổi; một số luồng cần cấu hình server (khóa Maps, thanh toán).</p>
+      </section>
+
+      <section>
+        <h2>3. Tài khoản</h2>
+        <ul>
+          <li>Cung cấp thông tin trung thực khi được yêu cầu.</li>
+          <li>Bạn chịu trách nhiệm hoạt động dưới phiên của mình.</li>
+          <li>Tài khoản quản trị không được lạm quyền.</li>
+          <li>Tạo tài khoản mới chủ yếu qua <strong>Google</strong> trên client hiện tại; đăng ký email công khai có thể chưa bật.</li>
+          <li>Quên mật khẩu có thể chưa đầy đủ API — dùng Google hoặc liên hệ hỗ trợ.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. Sử dụng chấp nhận được</h2>
+        <ul>
+          <li>Không đăng nội dung trái pháp luật, lừa đảo, quấy rối, phân biệt.</li>
+          <li>Không mạo danh, không giả mạo chủ sân.</li>
+          <li>Không tấn công bảo mật, không làm suy giảm vận hành.</li>
+          <li>Thông tin liên hệ công khai có thể bị sao chép — chỉ đăng điều bạn chấp nhận lộ.</li>
+          <li>Không thao túng Lông xu/thanh toán.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. Tích hợp Google</h2>
+        <ul>
+          <li><strong>Đăng nhập Google</strong> tuân theo điều khoản Google; Dịch vụ xác minh token và đọc trường tối thiểu (email, tên, <code>sub</code>).</li>
+          <li><strong>Google Maps Platform</strong> gọi phía server khi resolve URL; dữ liệu có thể lưu trong hồ sơ sân. Không được dùng Dịch vụ vi phạm điều khoản Maps.</li>
+          <li>Thay đổi/sự cố phía Google có thể ảnh hưởng tính năng.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. Nội dung &amp; cấp phép</h2>
+        <p>Bạn giữ quyền sở hữu nội dung gửi lên. Bạn cấp cho vận hành Dịch vụ quyền phi độc quyền lưu trữ, xử lý, hiển thị và phân phối trong phạm vi Dịch vụ (kể cả với người xem trang công khai) và sao lưu/chỉ mục kỹ thuật.</p>
+        <p>Bạn cam đoan có quyền với media và kênh liên hệ đã đăng.</p>
+      </section>
+
+      <section>
+        <h2>7. Bên thứ ba &amp; thanh toán</h2>
+        <p>Thanh toán qua tích hợp <strong>Pay2S</strong> theo cấu hình triển khai. Phí, hoàn tiền, tranh chấp có thể chịu điều khoản nhà cung cấp. Dịch vụ ghi nhận kết quả để cập nhật Lông xu/VIP.</p>
+      </section>
+
+      <section>
+        <h2>8. Sẵn sàng &amp; thay đổi</h2>
+        <p>Dịch vụ cung cấp theo khả năng sẵn có. Bảo trì, sự cố, cấu hình sai hoặc lỗi bên thứ ba có thể gián đoạn. Chúng tôi có thể sửa, tạm ngưng hoặc ngừng tính năng.</p>
+      </section>
+
+      <section>
+        <h2>9. Miễn trừ</h2>
+        <p>Dịch vụ hỗ trợ tìm kiếm và phối hợp; không đảm bảo sân còn trống, trình độ người chơi, hay thanh toán ngoại tuyến giữa các bên. Dữ liệu bản đồ/điểm có thể cũ. Bạn tự đánh giá rủi ro khi gặp mặt và giao dịch ngoài đời.</p>
+        <p>Trong giới hạn pháp luật, Dịch vụ được cung cấp <strong>không kèm bảo đảm</strong> về thương mại, phù hợp mục đích cụ thể, hay không vi phạm.</p>
+      </section>
+
+      <section>
+        <h2>10. Giới hạn trách nhiệm</h2>
+        <p>Trong phạm vi tối đa pháp luật cho phép, nhà vận hành không chịu trách nhiệm với thiệt hại gián tiếp, đặc biệt, hệ quả, hoặc mất lợi nhuận/dữ liệu.</p>
+        <p>Tổng trách nhiệm trực tiếp không vượt mức lớn hơn trong (a) số tiền bạn đã trả cho VIP/nạp qua Dịch vụ trong ba tháng trước sự kiện hoặc (b) 50 USD, trừ khi luật cấm giới hạn.</p>
+      </section>
+
+      <section>
+        <h2>11. Bồi thường</h2>
+        <p>Bạn đồng ý bồi thường cho nhà vận hành đối với khiếu nại phát sinh từ nội dung của bạn, lạm dụng Dịch vụ, hoặc vi phạm Điều khoản/quyền bên thứ ba.</p>
+      </section>
+
+      <section>
+        <h2>12. Chấm dứt</h2>
+        <p>Chúng tôi có thể đình chỉ/đóng tài khoản vi phạm hoặc gây rủi ro bảo mật. Bạn có thể ngừng dùng bất cứ lúc nào. Các điều khoản mang tính tồn tại (miễn trừ, giới hạn trách nhiệm, bồi thường) vẫn hiệu lực.</p>
+      </section>
+
+      <section>
+        <h2>13. Sở hữu trí tuệ</h2>
+        <p>Thương hiệu, giao diện và mã nguồn gốc của Dịch vụ được bảo hộ. Không sao chép, dịch ngược, hoặc tạo tác phẩm phái sinh trái phép.</p>
+      </section>
+
+      <section>
+        <h2>14. Sửa Điều khoản</h2>
+        <p>Chúng tôi có thể cập nhật; ngày “Cập nhật” thể hiện phiên bản. Tiếp tục sử dụng sau thay đổi có thể được coi là chấp nhận khi luật cho phép.</p>
+      </section>
+
+      <section>
+        <h2>15. Luật áp dụng</h2>
+        <p>Trừ khi luật bắt buộc tại nơi bạn cư trú quy định khác, tranh chấp chịu luật của pháp nhân vận hành bản triển khai (trừ xung đột pháp luật). Tòa án tại địa phương đó có thẩm quyền, phụ thuộc quyền bảo vệ người tiêu dùng không được phép từ bỏ.</p>
+        <p class="updated" style="margin-top:0.75rem">Để biết tên pháp nhân/địa chỉ đăng ký của một bản triển khai cụ thể, hãy yêu cầu qua trang liên hệ chân trang.</p>
+      </section>
+
+      <section>
+        <h2>16. Liên hệ</h2>
+        <p><a href="https://laughingthi00.github.io/app-policy/contact/" rel="noopener noreferrer">https://laughingthi00.github.io/app-policy/contact/</a></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-bilingual">
+        <div>
+          <p><strong>Contact development team</strong></p>
+          <p><a href="https://laughingthi00.github.io/app-policy/contact/" rel="noopener noreferrer">https://laughingthi00.github.io/app-policy/contact/</a></p>
+        </div>
+        <div>
+          <p><strong>Liên hệ nhóm phát triển</strong></p>
+          <p><a href="https://laughingthi00.github.io/app-policy/contact/" rel="noopener noreferrer">https://laughingthi00.github.io/app-policy/contact/</a></p>
+        </div>
+      </div>
+      <div class="footer-bilingual" style="margin-top:1rem">
+        <div>
+          <p><strong>Explore more products</strong></p>
+          <p><a href="https://nature-flow.cloud/product" rel="noopener noreferrer">https://nature-flow.cloud/product</a></p>
+        </div>
+        <div>
+          <p><strong>Khám phá thêm sản phẩm</strong></p>
+          <p><a href="https://nature-flow.cloud/product" rel="noopener noreferrer">https://nature-flow.cloud/product</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var body = document.body;
+      var btnEn = document.getElementById('btn-en');
+      var btnVi = document.getElementById('btn-vi');
+      function setLang(vi) {
+        if (vi) {
+          body.classList.add('show-vi');
+          btnVi.classList.add('active');
+          btnEn.classList.remove('active');
+          btnVi.setAttribute('aria-pressed', 'true');
+          btnEn.setAttribute('aria-pressed', 'false');
+          document.documentElement.lang = 'vi';
+        } else {
+          body.classList.remove('show-vi');
+          btnEn.classList.add('active');
+          btnVi.classList.remove('active');
+          btnEn.setAttribute('aria-pressed', 'true');
+          btnVi.setAttribute('aria-pressed', 'false');
+          document.documentElement.lang = 'en';
+        }
+        try { localStorage.setItem('tvl_pages_lang', vi ? 'vi' : 'en'); } catch (e) {}
+      }
+      btnEn.addEventListener('click', function () { setLang(false); });
+      btnVi.addEventListener('click', function () { setLang(true); });
+      try {
+        if (localStorage.getItem('tvl_pages_lang') === 'vi') setLang(true);
+      } catch (e) {}
+    })();
+  </script>
+</body>
+</html>

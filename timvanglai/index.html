@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tìm sân cầu lông vãng lai — Product overview</title>
+  <meta name="description" content="Find badminton courts and pickup games. Bilingual product page for Tìm sân cầu lông vãng lai." />
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; color: var(--accent-hover); }
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 1.25rem; }
+    .bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding: 0.85rem 0;
+    }
+    nav { display: flex; flex-wrap: wrap; gap: 1rem; font-size: 0.95rem; }
+    nav a { color: var(--text); font-weight: 500; }
+    nav a[aria-current="page"] { color: var(--accent); }
+    .lang-toggle {
+      display: flex;
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--card);
+    }
+    .lang-toggle button {
+      border: none;
+      background: transparent;
+      padding: 0.4rem 0.75rem;
+      cursor: pointer;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .lang-toggle button.active {
+      background: var(--accent);
+      color: #fff;
+    }
+    main { padding: 2rem 0 3rem; }
+    .hero {
+      text-align: center;
+      padding: 2rem 0 1.5rem;
+    }
+    .hero h1 { font-size: clamp(1.5rem, 4vw, 2rem); margin: 0 0 0.5rem; line-height: 1.25; }
+    .tagline { color: var(--muted); font-size: 1.05rem; margin: 0; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1rem;
+    }
+    section h2 { font-size: 1.15rem; margin: 0 0 0.75rem; }
+    ul { margin: 0; padding-left: 1.25rem; }
+    li { margin-bottom: 0.35rem; }
+    .lang.vi { display: none; }
+    body.show-vi .lang.en { display: none; }
+    body.show-vi .lang.vi { display: block; }
+    .steps { counter-reset: step; list-style: none; padding-left: 0; }
+    .steps li {
+      position: relative;
+      padding-left: 2.25rem;
+      margin-bottom: 0.75rem;
+    }
+    .steps li::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1.6rem;
+      height: 1.6rem;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 50%;
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+    }
+    .site-footer {
+      margin-top: 2.5rem;
+      padding: 1.5rem 0 2rem;
+      border-top: 2px solid var(--border);
+      background: var(--card);
+      font-size: 0.9rem;
+    }
+    .site-footer .footer-inner { max-width: 720px; margin: 0 auto; padding: 0 1.25rem; }
+    .site-footer p { margin: 0.5rem 0; color: var(--muted); }
+    .site-footer .footer-bilingual { display: grid; gap: 0.35rem; margin-top: 1rem; }
+    @media (min-width: 560px) {
+      .site-footer .footer-bilingual { grid-template-columns: 1fr 1fr; gap: 1rem; }
+    }
+    .muted { color: var(--muted); font-size: 0.92rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap bar">
+      <nav aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" id="btn-en" class="active" aria-pressed="true">EN</button>
+        <button type="button" id="btn-vi" aria-pressed="false">VI</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <div class="lang en">
+        <h1>Tìm sân cầu lông vãng lai</h1>
+        <p class="tagline">Find badminton courts and casual games—without the runaround.</p>
+      </div>
+      <div class="lang vi">
+        <h1>Tìm sân cầu lông vãng lai</h1>
+        <p class="tagline">Tìm sân và lịch đánh nhanh—đỡ mất công hỏi han.</p>
+      </div>
+    </div>
+
+    <div class="lang en">
+      <section>
+        <h2>The problem &amp; what we do</h2>
+        <p>Picking a court, gathering enough players, and sharing contact details across chats is messy. This web app brings <strong>court listings</strong>, <strong>open game posts (“listings”)</strong>, <strong>regular group slots</strong>, and <strong>player “pairing” profiles</strong> into one place so you can move from “who’s free?” to “see you on court” faster.</p>
+      </section>
+      <section>
+        <h2>Who it’s for</h2>
+        <ul>
+          <li>Casual and club players looking for courts and pickup games in Vietnam.</li>
+          <li>Hosts who want to publish sessions, share Zalo/Facebook links, and optional payment QR codes.</li>
+          <li>Group leaders who maintain weekly time slots tied to a specific court.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>What you can do (from the live product)</h2>
+        <ul>
+          <li><strong>Browse courts</strong> with address, map link, photos, and—when available—public rating info synced from Google Maps business data.</li>
+          <li><strong>Submit a new court</strong> for review; staff can enrich records using Google Maps URLs.</li>
+          <li><strong>Create listings</strong> for a date: skill bands, court count, prices, and contact channels.</li>
+          <li><strong>Join or follow groups</strong> (“vanguard” style) with weekly schedules and media.</li>
+          <li><strong>Post a pairing seek</strong> with gender, age range, handedness, area, and contacts.</li>
+          <li><strong>Build a badminton CV</strong> (headline, story, achievements, template styling).</li>
+          <li><strong>Long Xu balance &amp; VIP</strong>: in-app currency for certain actions and paid VIP tiers with perks defined in the product.</li>
+          <li><strong>Sign in</strong> with Google or email/password (where enabled); new public email registration may rely on Google depending on server configuration.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li>Open the site and explore courts or posts without needing an account for public views.</li>
+          <li>Create an account via Google sign-in (or log in with email/password if you already have one).</li>
+          <li>Complete your profile if you plan to buy VIP—name, phone, and avatar are required for that flow in the app.</li>
+          <li>Post a listing or manage your group; others reach you through the contact methods you choose.</li>
+          <li>Top up Long Xu or subscribe to VIP through the integrated payment flow when you use those features.</li>
+        </ol>
+      </section>
+      <section>
+        <h2>Why people stick with it</h2>
+        <ul>
+          <li><strong>Practical:</strong> fewer scattered screenshots—structured sessions, prices, and map links in one screen.</li>
+          <li><strong>Social:</strong> show your level and availability; hosts control how people get in touch.</li>
+          <li><strong>Calm clarity:</strong> admin tools keep court data consistent when Maps links are resolved server-side.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Integrations you should know about</h2>
+        <ul>
+          <li><strong>Google</strong> — Sign-In for accounts; server-side <strong>Google Maps Platform</strong> calls to read public place details when staff or tools paste a Maps URL (not your private Google Drive or Gmail).</li>
+          <li><strong>Payments</strong> — Pay2S webhook and pending-payment flow for Long Xu and VIP (as implemented in code).</li>
+          <li><strong>Cloud storage</strong> — uploaded images/videos for profiles, courts, listings, and QR codes are stored using the project’s cloud object storage layer.</li>
+          <li><strong>Analytics</strong> — the public web build can load Vercel Analytics in production.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Trust &amp; safety (high level)</h2>
+        <p>Accounts use industry-standard sign-in verification for Google tokens and hashed passwords on the server. Session tokens are issued for authenticated actions. You choose what contact info you expose in listings and profiles—treat public posts like public bulletin boards.</p>
+      </section>
+      <section>
+        <h2>Honest limitations</h2>
+        <ul>
+          <li>Court data quality depends on submissions and admin review; Google ratings are informational and come from Google’s public business listing, not from this app’s own review system.</li>
+          <li>The “forgot password” screen may be a placeholder until a full reset API is wired—use Google sign-in or contact support if you are locked out.</li>
+          <li>Features such as payments and Maps resolution need correct environment configuration; if keys are missing, parts of the product will show errors or be unavailable.</li>
+          <li>Long Xu is an in-app balance tied to the product rules—not a regulated currency.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Where it could go next</h2>
+        <p class="muted">The codebase already separates listings, groups, courts, and payments—so richer notifications, stricter verification, or deeper scheduling tools could build on the same foundation without changing what exists today.</p>
+      </section>
+    </div>
+
+    <div class="lang vi">
+      <section>
+        <h2>Vấn đề &amp; cách app giúp</h2>
+        <p>Chốt sân, gom đủ người và chia sẻ Zalo/Facebook rời rạc rất mất thời gian. Ứng dụng web này gom <strong>danh sách sân</strong>, <strong>bài tìm người (listing)</strong>, <strong>khung giờ nhóm cố định</strong> và <strong>hồ sơ ghép cặp</strong> để bạn nhanh chóng chuyển từ “ai rảnh?” sang “hẹn trên sân”.</p>
+      </section>
+      <section>
+        <h2>Ai dùng phù hợp</h2>
+        <ul>
+          <li>Người chơi phong trào / CLB tại Việt Nam cần sân và lịch đánh bù.</li>
+          <li>Chủ trì muốn đăng ca, giá, kênh liên lạc và có thể gắn mã QR thanh toán.</li>
+          <li>Trưởng nhóm duy trì lịch theo tuần gắn với một sân cụ thể.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Tính năng chính (theo code đang chạy)</h2>
+        <ul>
+          <li><strong>Xem sân</strong>: địa chỉ, link Maps, ảnh/video; khi có dữ liệu thì hiển thị đánh giá công khai lấy từ nghiệp vụ Google Maps.</li>
+          <li><strong>Gửi sân mới</strong> chờ duyệt; quản trị có thể bổ sung từ URL Google Maps.</li>
+          <li><strong>Tạo listing</strong> theo ngày: trình độ, số sân, giá nam/nữ, kênh liên hệ.</li>
+          <li><strong>Nhóm (vanguard)</strong>: lịch tuần, ảnh/video, link tham gia nhóm chat.</li>
+          <li><strong>Tìm đối ghép</strong>: giới tính, độ tuổi, tay thuận, khu vực, liên hệ.</li>
+          <li><strong>CV cầu lông</strong>: giới thiệu, thành tích, mẫu hiển thị.</li>
+          <li><strong>Lông xu &amp; VIP</strong>: số dư trong app và gói VIP theo tier trong sản phẩm.</li>
+          <li><strong>Đăng nhập</strong> Google hoặc email/mật khẩu; đăng ký công khai bằng email có thể chưa bật—Google thường là lối tạo tài khoản mới.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Cách dùng</h2>
+        <ol class="steps">
+          <li>Vào web, xem sân/bài công khai (nhiều phần không cần tài khoản).</li>
+          <li>Tạo tài khoản bằng Google hoặc đăng nhập email nếu đã có.</li>
+          <li>Hoàn thiện hồ sơ nếu cần mua VIP—họ tên, SĐT, ảnh đại diện là điều kiện trong app.</li>
+          <li>Đăng listing hoặc quản lý nhóm; người khác liên hệ qua kênh bạn công khai.</li>
+          <li>Nạp Lông xu hoặc mua VIP qua luồng thanh toán tích hợp khi bạn dùng các tính năng đó.</li>
+        </ol>
+      </section>
+      <section>
+        <h2>Lợi ích</h2>
+        <ul>
+          <li><strong>Thực tế:</strong> ít chụp màn hình rời—giờ sân, giá, bản đồ gọn một chỗ.</li>
+          <li><strong>Cộng đồng:</strong> thể hiện trình độ và nhu cầu; chủ trì kiểm soát cách liên lạc.</li>
+          <li><strong>Rõ ràng:</strong> công cụ quản trị giúp dữ liệu sân đồng bộ khi resolve Maps phía máy chủ.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Tích hợp</h2>
+        <ul>
+          <li><strong>Google</strong> — Đăng nhập; API Google Maps phía server để đọc thông tin địa điểm công khai từ link Maps (không đụng Gmail/Drive của bạn).</li>
+          <li><strong>Thanh toán</strong> — Pay2S (webhook, giao dịch chờ) cho Lông xu và VIP.</li>
+          <li><strong>Lưu trữ đám mây</strong> — ảnh/video upload (hồ sơ, sân, QR…).</li>
+          <li><strong>Phân tích</strong> — Vercel Analytics có thể bật trên bản production.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Tin cậy &amp; an toàn (tổng quan)</h2>
+        <p>Google ID token được xác minh trên server; mật khẩu (nếu có) lưu dạng băm. Phiên làm việc dùng token. Thông tin liên hệ bạn đưa vào bài đăng là do bạn chọn—coi như thông báo công khai.</p>
+      </section>
+      <section>
+        <h2>Hạn chế thực tế</h2>
+        <ul>
+          <li>Chất lượng dữ liệu sân phụ thuộc gửi tin và duyệt; điểm Google là tham khảo từ Maps.</li>
+          <li>Trang quên mật khẩu có thể là demo cho tới khi API reset hoàn chỉnh.</li>
+          <li>Maps/thanh toán cần cấu hình khóa; thiếu cấu hình thì một số chức năng báo lỗi hoặc không dùng được.</li>
+          <li>Lông xu là đơn vị trong app theo luật sản phẩm—không phải tiền pháp định.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Hướng mở rộng</h2>
+        <p class="muted">Nền tảng đã tách listing, nhóm, sân và thanh toán—có thể bổ sung thông báo, xác minh chặt hơn hoặc lịch sâu hơn trên cùng kiến trúc.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-bilingual">
+        <div>
+          <p><strong>Contact development team</strong></p>
+          <p><a href="https://laughingthi00.github.io/app-policy/contact/" rel="noopener noreferrer">https://laughingthi00.github.io/app-policy/contact/</a></p>
+        </div>
+        <div>
+          <p><strong>Liên hệ nhóm phát triển</strong></p>
+          <p><a href="https://laughingthi00.github.io/app-policy/contact/" rel="noopener noreferrer">https://laughingthi00.github.io/app-policy/contact/</a></p>
+        </div>
+      </div>
+      <div class="footer-bilingual" style="margin-top:1rem">
+        <div>
+          <p><strong>Explore more products</strong></p>
+          <p><a href="https://nature-flow.cloud/product" rel="noopener noreferrer">https://nature-flow.cloud/product</a></p>
+        </div>
+        <div>
+          <p><strong>Khám phá thêm sản phẩm</strong></p>
+          <p><a href="https://nature-flow.cloud/product" rel="noopener noreferrer">https://nature-flow.cloud/product</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var body = document.body;
+      var btnEn = document.getElementById('btn-en');
+      var btnVi = document.getElementById('btn-vi');
+      function setLang(vi) {
+        if (vi) {
+          body.classList.add('show-vi');
+          btnVi.classList.add('active');
+          btnEn.classList.remove('active');
+          btnVi.setAttribute('aria-pressed', 'true');
+          btnEn.setAttribute('aria-pressed', 'false');
+          document.documentElement.lang = 'vi';
+        } else {
+          body.classList.remove('show-vi');
+          btnEn.classList.add('active');
+          btnVi.classList.remove('active');
+          btnEn.setAttribute('aria-pressed', 'true');
+          btnVi.setAttribute('aria-pressed', 'false');
+          document.documentElement.lang = 'en';
+        }
+        try { localStorage.setItem('tvl_pages_lang', vi ? 'vi' : 'en'); } catch (e) {}
+      }
+      btnEn.addEventListener('click', function () { setLang(false); });
+      btnVi.addEventListener('click', function () { setLang(true); });
+      try {
+        if (localStorage.getItem('tvl_pages_lang') === 'vi') setLang(true);
+      } catch (e) {}
+    })();
+  </script>
+</body>
+</html>
