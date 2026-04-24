@@ -10,14 +10,14 @@
   "hero": {
     "badge": "Software Engineer",
     "titlePrefix": "Hi, I am",
-    "tagline": "Currently a Software Engineer at Nature Flow Co., Ltd.",
+    "tagline": "Currently a Software Engineer and Founder at Nature Flow Co., Ltd.",
     "ctaDonate": "Support My Work",
     "ctaContact": "Send Feedback",
     "avatarAlt": "Portrait of Nguyen Minh Thien"
   },
   "about": {
     "title": "About",
-    "body": "I am a Software Engineer at Nature Flow Co., Ltd, specializing in software outsourcing, digital solutions, e-commerce, and agriculture. I create practical apps and lightweight tools.",
+    "body": "I am a Software Engineer and Founder of Nature Flow Co., Ltd, specializing in software outsourcing, digital solutions, e-commerce, and agriculture. I create practical apps and lightweight tools.",
     "productsCta": "View Other Products"
   },
   "value": {
